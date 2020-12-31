@@ -1,0 +1,14 @@
+>=www-client/google-chrome-87.0.4280.88 google-chrome
+>=www-client/opera-73.0.3856.284-r1 OPERA-2018
+# required by app-vim/colorschemes (argument)
+>=app-vim/colorschemes-20140623-r1 vim.org
+# required by app-benchmarks/ramspeed (argument)
+>=app-benchmarks/ramspeed-3.5.0-r2 Alasir
+# required by app-benchmarks/bonnie (argument)
+>=app-benchmarks/bonnie-2.0.6-r2 bonnie
+# required by app-benchmarks/iozone (argument)
+>=app-benchmarks/iozone-3.488 freedist
+# required by app-benchmarks/nbench (argument)
+>=app-benchmarks/nbench-2.2.3-r1 freedist
+# required by app-arch/unrar (argument)
+=app-arch/unrar-5.9.4 unRAR

@@ -1,0 +1,7 @@
+>=media-gfx/qiv-2.3.2-r1 ~amd64
+>=media-gfx/jpegtoavi-1.5 ~amd64
+>=media-gfx/fim-0.5_rc3 ~amd64
+>=media-gfx/termtosvg-1.1.0 ~amd64
+>=media-gfx/fdm-materials-4.8.0 ~amd64
+>=media-gfx/cura-4.8.0 ~amd64
+>=media-gfx/curaengine-4.8.0 ~amd64

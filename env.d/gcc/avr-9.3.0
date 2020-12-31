@@ -1,0 +1,8 @@
+GCC_PATH="/usr/x86_64-pc-linux-gnu/avr/gcc-bin/9.3.0"
+LDPATH="/usr/lib/gcc/avr/9.3.0"
+MANPATH="/usr/share/gcc-data/avr/9.3.0/man"
+INFOPATH="/usr/share/gcc-data/avr/9.3.0/info"
+STDCXX_INCDIR="g++-v9"
+CTARGET="avr"
+GCC_SPECS=""
+MULTIOSDIRS="."
