@@ -254,3 +254,7 @@ dev-python/jinja python_targets_python3_7
 # required by app-misc/gcalcli-4.2.0::gentoo
 # required by app-misc/gcalcli (argument)
 >=dev-python/googleapis-common-protos-1.51.0 python_targets_python3_7
+# required by sys-fs/cryptsetup-2.3.2::gentoo[openssl,static,-static-libs,-libressl]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.1.1i static-libs
