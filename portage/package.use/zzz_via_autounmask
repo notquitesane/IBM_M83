@@ -258,3 +258,6 @@ dev-python/jinja python_targets_python3_7
 # required by @selected
 # required by @world (argument)
 >=dev-libs/openssl-1.1.1i static-libs
+# required by dev-lang/ruby-2.5.8::gentoo
+# required by dev-lang/ruby-2.5.8::gentoo[rdoc]
+# required by dev-lang/ruby-2.5.8::gentoo[rdoc]
