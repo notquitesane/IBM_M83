@@ -217,9 +217,9 @@ virtual/ffmpeg X mp3 theora -vaapi -vdpau x264
 virtual/imagemagick-tools jpeg svg png tiff
 virtual/libudev static-libs
 >=virtual/mpi-2.0-r4 cxx
-www-client/elinks bittorrent ftp debug javascript perl ruby -ipv6
+www-client/elinks bittorrent ftp debug javascript perl ruby 
 www-client/w3m X imlib
-x11-base/xorg-server xcsecurity xnest -ipv6 suid -elogind
+x11-base/xorg-server xcsecurity xnest  suid -elogind
 x11-drivers/xf86-video-intel dri tools uxa xvmc
 x11-libs/cairo X svg
 x11-libs/gdk-pixbuf X jpeg tiff
@@ -238,16 +238,16 @@ x11-terms/mlterm cairo fbcon libssh2 xft
 x11-terms/mrxvt jpeg menubar png truetype xpm
 x11-terms/rxvt-unicode 256-color iso14755 perl startup-notification unicode3 xft
 x11-terms/xterm truetype
-net-misc/ntp -ipv6
-x11-libs/libFS -ipv6
-x11-libs/libICE -ipv6
-x11-libs/libSM -ipv6
-x11-libs/libX11 -ipv6
-x11-libs/libXfont2 -ipv6
-x11-libs/libXmu -ipv6
-sys-process/psmisc -ipv6
-x11-apps/xauth -ipv6
-x11-apps/xhost -ipv6
+net-misc/ntp 
+x11-libs/libFS 
+x11-libs/libICE 
+x11-libs/libSM 
+x11-libs/libX11 
+x11-libs/libXfont2 
+x11-libs/libXmu 
+sys-process/psmisc 
+x11-apps/xauth 
+x11-apps/xhost 
 dev-vcs/mercurial python_targets_python3_6
 # required by dev-vcs/mercurial-5.4.2-r1::gentoo
 # required by app-portage/layman-2.4.3::gentoo[mercurial]
