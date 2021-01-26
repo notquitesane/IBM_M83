@@ -39,9 +39,9 @@ shm						/dev/shm        	tmpfs           rw,nosuid,nodev,noexec,relatime 			0 0
 
 #NFS mounts
 
-10.255.0.13:/export/distfiles			/var/cache/distfiles	nfs4		rw,_netdev			0 0
-10.255.0.13:/export/binpkgs			/var/cache/binpkgs	nfs4		rw,_netdev			0 0
-10.255.0.13:/export/gentoo			/var/db/repos/gentoo	nfs4		rw,_netdev			0 0
-10.255.0.13:/export/home			/home			nfs4		rw,_netdev			0 0
-10.255.0.13:/export/media                       /media                  nfs4            rw,_netdev                      0 0
+10.255.0.13:/distfiles				/var/cache/distfiles	nfs4		rw,_netdev			0 0
+10.255.0.13:/binpkgs				/var/cache/binpkgs	nfs4		rw,_netdev			0 0
+10.255.0.13:/gentoo				/var/db/repos/gentoo	nfs4		rw,_netdev			0 0
+10.255.0.13:/home				/home			nfs4		rw,_netdev			0 0
+10.255.0.13:/media				/media                  nfs4            rw,_netdev                      0 0
 
