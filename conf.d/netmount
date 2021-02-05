@@ -17,7 +17,7 @@
 # This example assumes all of your netmounts can be reached on
 # eth0.
 #
-#rc_need="net.eth0"
+rc_need="net.em1"
 #
 # This example assumes some of your netmounts are on eth1 and some
 # are on eth2.
@@ -30,7 +30,7 @@
 # should list that tool.
 #
 #rc_need="NetworkManager"
-#rc_need="dhcpcd"
+rc_need="dhcpcd"
 #rc_need="wicd"
 #
 # The default setting is designed to be backward compatible with our

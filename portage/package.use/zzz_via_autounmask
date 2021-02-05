@@ -261,3 +261,8 @@ dev-python/jinja python_targets_python3_7
 # required by dev-lang/ruby-2.5.8::gentoo
 # required by dev-lang/ruby-2.5.8::gentoo[rdoc]
 # required by dev-lang/ruby-2.5.8::gentoo[rdoc]
+# required by dev-python/PyQtWebEngine-5.15.2::gentoo
+# required by app-text/calibre-4.22.0::gentoo[python_single_target_python3_8]
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtwebengine-5.15.2 widgets
