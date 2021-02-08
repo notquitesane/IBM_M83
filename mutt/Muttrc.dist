@@ -23,7 +23,7 @@ macro index,pager,attach,compose \cb "\
 "call urlview to extract URLs out of a message"
 
 # Show documentation when pressing F1
-macro generic,pager <F1> "<shell-escape> less /usr/share/doc/mutt-1.14.4-r1/manual.txt<Enter>" "show Mutt documentation"
+macro generic,pager <F1> "<shell-escape> less /usr/share/doc/mutt-2.0.4-r1/manual.txt<Enter>" "show Mutt documentation"
 
 # show the incoming mailboxes list (just like "mutt -y") and back when pressing "y"
 # note: these macros have been subsumed by the <browse-mailboxes> function.
@@ -352,6 +352,21 @@ attachments   -I message/external-body
 # For an explanation of ``soft-fill'', see the $index_format documentation.
 # 
 # 
+# set attach_save_dir=""
+#
+# Name: attach_save_dir
+# Type: path
+# Default: ""
+# 
+# 
+# The default directory to save attachments from the ``attachment'' menu.
+# If it doesn't exist, Mutt will prompt to create the directory before
+# saving.
+# 
+# If the path is invalid (e.g. not a directory, or cannot be
+# chdir'ed to), Mutt will fall back to using the current directory.
+# 
+# 
 # set attach_sep="\n"
 #
 # Name: attach_sep
@@ -380,7 +395,7 @@ attachments   -I message/external-body
 # set attribution="On %d, %n wrote:"
 #
 # Name: attribution
-# Type: string
+# Type: string (localized)
 # Default: "On %d, %n wrote:"
 # 
 # 
@@ -769,7 +784,7 @@ attachments   -I message/external-body
 # set compose_format="-- Mutt: Compose  [Approx. msg size: %l   Atts: %a]%>-"
 #
 # Name: compose_format
-# Type: string
+# Type: string (localized)
 # Default: "-- Mutt: Compose  [Approx. msg size: %l   Atts: %a]%>-"
 # 
 # 
@@ -861,6 +876,17 @@ attachments   -I message/external-body
 # $save_name, $force_name and ``fcc-hook''.
 # 
 # 
+# set copy_decode_weed=no
+#
+# Name: copy_decode_weed
+# Type: boolean
+# Default: no
+# 
+# 
+# Controls whether Mutt will weed headers when invoking the
+# <decode-copy> or <decode-save> functions.
+# 
+# 
 # set count_alternatives=no
 #
 # Name: count_alternatives
@@ -877,6 +903,20 @@ attachments   -I message/external-body
 # one of alternatives.  Setting this will allow Mutt to find
 # and count matching attachments hidden there, and include them
 # in the index via %X or through ~X pattern matching.
+# 
+# 
+# set cursor_overlay=no
+#
+# Name: cursor_overlay
+# Type: boolean
+# Default: no
+# 
+# 
+# When set, Mutt will overlay the indicator, tree,
+# sidebar_highlight, and sidebar_indicator colors onto the currently
+# selected line.  This will allow default colors in those
+# to be overridden, and for attributes to be merged between
+# the layers.
 # 
 # 
 # set crypt_autoencrypt=no
@@ -1003,11 +1043,11 @@ attachments   -I message/external-body
 # Default: yes
 # 
 # 
-# When set, Mutt will display protected headers ("Memory Hole") in the pager,
+# When set, Mutt will display protected headers in the pager,
 # and will update the index and header cache with revised headers.
 # Protected headers are stored inside the encrypted or signed part of an
 # an email, to prevent disclosure or tampering.
-# For more information see https://github.com/autocrypt/memoryhole.
+# For more information see https://github.com/autocrypt/protected-headers.
 # Currently Mutt only supports the Subject header.
 # 
 # Encrypted messages using protected headers often substitute the exposed
@@ -1048,11 +1088,11 @@ attachments   -I message/external-body
 # (Crypto only)
 # 
 # 
-# set crypt_protected_headers_subject="Encrypted subject"
+# set crypt_protected_headers_subject="..."
 #
 # Name: crypt_protected_headers_subject
 # Type: string
-# Default: "Encrypted subject"
+# Default: "..."
 # 
 # 
 # When $crypt_protected_headers_write is set, and the message is marked
@@ -1070,11 +1110,11 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# When set, Mutt will generate protected headers ("Memory Hole") for
-# signed and encrypted emails.
+# When set, Mutt will generate protected headers for signed and
+# encrypted emails.
 # Protected headers are stored inside the encrypted or signed part of an
 # an email, to prevent disclosure or tampering.
-# For more information see https://github.com/autocrypt/memoryhole.
+# For more information see https://github.com/autocrypt/protected-headers.
 # Currently Mutt only supports the Subject header.
 # (Crypto only)
 # 
@@ -1285,7 +1325,7 @@ attachments   -I message/external-body
 # Default: "/usr/bin/mutt_dotlock"
 # 
 # 
-# Contains the path of the mutt_dotlock(8) binary to be used by
+# Contains the path of the mutt_dotlock(1) binary to be used by
 # mutt.
 # 
 # 
@@ -1641,7 +1681,7 @@ attachments   -I message/external-body
 # set forward_attribution_intro="----- Forwarded message from %f -----"
 #
 # Name: forward_attribution_intro
-# Type: string
+# Type: string (localized)
 # Default: "----- Forwarded message from %f -----"
 # 
 # 
@@ -1654,7 +1694,7 @@ attachments   -I message/external-body
 # set forward_attribution_trailer="----- End forwarded message -----"
 #
 # Name: forward_attribution_trailer
-# Type: string
+# Type: string (localized)
 # Default: "----- End forwarded message -----"
 # 
 # 
@@ -2016,6 +2056,12 @@ attachments   -I message/external-body
 # determine the domain, the full value returned by uname is used.
 # Optionally, Mutt can be compiled with a fixed domain name in
 # which case a detected one is not used.
+# 
+# Starting in Mutt 2.0, the operations described in the previous
+# paragraph are performed after the muttrc is processed, instead of
+# beforehand.  This way, if the DNS operations are creating delays
+# at startup, you can avoid those by manually setting the value in
+# your muttrc.
 # 
 # Also see $use_domain and $hidden_host.
 # 
@@ -3036,6 +3082,17 @@ attachments   -I message/external-body
 # a ``mbox-hook'' command.
 # 
 # 
+# set muttlisp_inline_eval=no
+#
+# Name: muttlisp_inline_eval
+# Type: boolean
+# Default: no
+# 
+# 
+# If set, Mutt will evaluate bare parenthesis arguments to commands
+# as MuttLisp expressions.
+# 
+# 
 # set narrow_tree=no
 #
 # Name: narrow_tree
@@ -3154,6 +3211,22 @@ attachments   -I message/external-body
 # When set, the internal-pager will not move to the next message
 # when you are at the end of a message and invoke the <next-page>
 # function.
+# 
+# 
+# set pattern_format="%2n %-15e  %d"
+#
+# Name: pattern_format
+# Type: string
+# Default: "%2n %-15e  %d"
+# 
+# 
+# This variable describes the format of the ``pattern completion'' menu. The
+# following printf(3)-style sequences are understood:
+# %d      pattern description
+# %e      pattern expression
+# %n      index number
+# 
+# 
 # 
 # 
 # set pgp_auto_decode=no
@@ -3730,10 +3803,23 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# Used in connection with the <pipe-message> command.  When unset,
+# Used in connection with the <pipe-message> function.  When unset,
 # Mutt will pipe the messages without any preprocessing. When set, Mutt
-# will weed headers and will attempt to decode the messages
-# first.
+# will attempt to decode the messages first.
+# 
+# Also see $pipe_decode_weed, which controls whether headers will
+# be weeded when this is set.
+# 
+# 
+# set pipe_decode_weed=yes
+#
+# Name: pipe_decode_weed
+# Type: boolean
+# Default: yes
+# 
+# 
+# For <pipe-message>, when $pipe_decode is set, this further
+# controls whether Mutt will weed headers.
 # 
 # 
 # set pipe_sep="\n"
@@ -4010,13 +4096,27 @@ attachments   -I message/external-body
 # Default: yes
 # 
 # 
-# Used in connection with the <print-message> command.  If this
+# Used in connection with the <print-message> function.  If this
 # option is set, the message is decoded before it is passed to the
 # external command specified by $print_command.  If this option
 # is unset, no processing will be applied to the message when
 # printing it.  The latter setting may be useful if you are using
 # some advanced printer filter which is able to properly format
 # e-mail messages for printing.
+# 
+# Also see $print_decode_weed, which controls whether headers will
+# be weeded when this is set.
+# 
+# 
+# set print_decode_weed=yes
+#
+# Name: print_decode_weed
+# Type: boolean
+# Default: yes
+# 
+# 
+# For <print-message>, when $print_decode is set, this
+# further controls whether Mutt will weed headers.
 # 
 # 
 # set print_split=no
@@ -4026,7 +4126,7 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# Used in connection with the <print-message> command.  If this option
+# Used in connection with the <print-message> function.  If this option
 # is set, the command specified by $print_command is executed once for
 # each message which is to be printed.  If this option is unset,
 # the command specified by $print_command is executed only once, and
@@ -4849,7 +4949,7 @@ attachments   -I message/external-body
 # Default: order
 # 
 # 
-# Specifies how to sort entries in the file browser.  By default, the
+# Specifies how to sort mailbox entries in the sidebar.  By default, the
 # entries are sorted alphabetically.  Valid values:
 # - alpha (alphabetically)
 # - count (all message count)
@@ -4862,7 +4962,7 @@ attachments   -I message/external-body
 # 
 # 
 # You may optionally use the ``reverse-'' prefix to specify reverse sorting
-# order (example: ``set sort_browser=reverse-date'').
+# order (example: ``set sidebar_sort_method=reverse-alpha'').
 # 
 # 
 # set sidebar_use_mailbox_shortcuts=no
@@ -4954,7 +5054,7 @@ attachments   -I message/external-body
 # 
 # Specifies how Mutt should expand a simple search into a real search
 # pattern.  A simple search is one that does not contain any of the ``~'' pattern
-# operators.  See ``patterns'' for more information on search patterns.
+# modifiers.  See ``patterns'' for more information on search patterns.
 # 
 # For example, if you simply type ``joe'' at a search or limit prompt, Mutt
 # will automatically expand it to the value specified by this variable by
@@ -5175,7 +5275,8 @@ attachments   -I message/external-body
 # set to the keyid (the hash-value that OpenSSL generates) to work properly.
 # 
 # It will be used for encryption (see $postpone_encrypt and
-# $smime_self_encrypt).
+# $smime_self_encrypt). If GPGME is enabled, this is the key id displayed
+# by gpgsm.
 # 
 # It will be used for decryption unless $smime_decrypt_use_default_key
 # is unset.
@@ -5653,11 +5754,11 @@ attachments   -I message/external-body
 # key.
 # 
 # 
-# set ssl_force_tls=no
+# set ssl_force_tls=yes
 #
 # Name: ssl_force_tls
 # Type: boolean
-# Default: no
+# Default: yes
 # 
 # 
 # If this variable is set, Mutt will require that all connections
@@ -5689,6 +5790,11 @@ attachments   -I message/external-body
 # If set (the default), mutt will attempt to use STARTTLS on servers
 # advertising the capability. When unset, mutt will not attempt to
 # use STARTTLS regardless of the server's capabilities.
+# 
+# Note that STARTTLS is subject to many kinds of
+# attacks, including the ability of a machine-in-the-middle to
+# suppress the advertising of support.  Setting $ssl_force_tls is
+# recommended if you rely on STARTTLS.
 # 
 # 
 # set ssl_use_sslv2=no
@@ -5826,7 +5932,7 @@ attachments   -I message/external-body
 # Default: ""
 # 
 # 
-# Contains a colon-seperated list of ciphers to use when using SSL.
+# Contains a colon-separated list of ciphers to use when using SSL.
 # For OpenSSL, see ciphers(1) for the syntax of the string.
 # 
 # For GnuTLS, this option will be used in place of "NORMAL" at the
@@ -5857,7 +5963,7 @@ attachments   -I message/external-body
 # set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?B? Back:%B?%?l? %l?]---(%s/%S)-%>-(%P)---"
 #
 # Name: status_format
-# Type: string
+# Type: string (localized)
 # Default: "-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?B? Back:%B?%?l? %l?]---(%s/%S)-%>-(%P)---"
 # 
 # 
@@ -6121,7 +6227,7 @@ attachments   -I message/external-body
 # set ts_icon_format="M%?n?AIL&ail?"
 #
 # Name: ts_icon_format
-# Type: string
+# Type: string (localized)
 # Default: "M%?n?AIL&ail?"
 # 
 # 
@@ -6144,7 +6250,7 @@ attachments   -I message/external-body
 # set ts_status_format="Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?"
 #
 # Name: ts_status_format
-# Type: string
+# Type: string (localized)
 # Default: "Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?"
 # 
 # 
@@ -6171,6 +6277,25 @@ attachments   -I message/external-body
 # When set, Mutt uses the tunnel for all remote connections.
 # Please see ``account-hook'' in the manual for how to use different
 # tunnel commands per connection.
+# 
+# 
+# set tunnel_is_secure=yes
+#
+# Name: tunnel_is_secure
+# Type: boolean
+# Default: yes
+# 
+# 
+# When set, Mutt will assume the $tunnel connection does not need
+# STARTTLS to be enabled.  It will also allow IMAP PREAUTH server
+# responses inside a tunnel to proceed.  This is appropriate if $tunnel
+# uses ssh or directly invokes the server locally.
+# 
+# When unset, Mutt will negotiate STARTTLS according to the
+# ssl_starttls and ssl_force_tls variables.  If ssl_force_tls is
+# set, Mutt will abort connecting if an IMAP server responds with PREAUTH.
+# This setting is appropriate if $tunnel does not provide security and
+# could be tampered with by attackers.
 # 
 # 
 # set uncollapse_jump=no
@@ -6318,7 +6443,9 @@ attachments   -I message/external-body
 # 
 # 
 # When set, mutt will weed headers when displaying, forwarding,
-# printing, or replying to messages.
+# or replying to messages.
+# 
+# Also see $copy_decode_weed, $pipe_decode_weed, $print_decode_weed.
 # 
 # 
 # set wrap=0

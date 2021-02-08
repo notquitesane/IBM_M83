@@ -1,7 +1,0 @@
-dev-libs/libressl
->=dev-libs/libsavitar-4.8.0 ~amd64
->=dev-libs/stb-20200713 ~amd64
->=dev-libs/libarcus-4.8.0 ~amd64
->=dev-libs/libnest2d-0.4 ~amd64
->=dev-libs/libcharon-4.8.0 ~amd64
->=dev-libs/clipper-6.4.2 ~amd64

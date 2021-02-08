@@ -83,7 +83,6 @@ app-misc/ca-certificates
 app-misc/chkcrontab
 app-misc/color
 app-misc/colordiff
-app-misc/cw
 app-misc/delay
 app-misc/detox
 app-misc/fsniper
