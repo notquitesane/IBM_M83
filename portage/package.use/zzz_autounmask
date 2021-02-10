@@ -84,7 +84,7 @@ dev-qt/qtmultimedia widgets
 dev-qt/qtsingleapplication X
 dev-qt/qtsql sqlite
 dev-qt/qtwebchannel qml
-dev-qt/qtwebengine alsa -designer jumbo-build -widgets
+dev-qt/qtwebengine alsa -designer jumbo-build -widgets -system-ffmpeg -system-icu
 dev-qt/qtwidgets png
 dev-vcs/git curl doc highlight -iconv perl
 games-engines/scummvm aac alsa flac jpeg mp3 opengl png theora truetype vorbis
