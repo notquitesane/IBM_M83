@@ -240,7 +240,6 @@ net-misc/ntp
 net-misc/sshrc
 net-misc/throttle
 net-misc/youtube-dl
-net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/torrentinfo
 net-vpn/surfshark-vpn
