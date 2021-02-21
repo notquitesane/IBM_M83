@@ -374,3 +374,4 @@ dev-python/jinja python_targets_python3_7
 # required by virtual/rubygems-15::gentoo[ruby_targets_ruby25]
 # required by dev-ruby/kpeg-1.1.0-r1::gentoo[ruby_targets_ruby26,-test]
 >=virtual/ruby-ssl-11 ruby_targets_ruby25
+cross-avr/binutils -gold

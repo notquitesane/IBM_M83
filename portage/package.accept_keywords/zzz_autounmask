@@ -1,2 +1,6 @@
 # required by media-gfx/sweethome3d-bin (argument)
 =media-gfx/sweethome3d-bin-6.4.2 ~amd64
+# required by =dev-embedded/arduino-1.8.13 (argument)
+=dev-embedded/arduino-1.8.13 ~amd64
+# required by sys-kernel/kccmp (argument)
+>=sys-kernel/kccmp-0.3-r1 ~amd64

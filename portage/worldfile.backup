@@ -154,6 +154,7 @@ app-vim/vimbuddy
 app-vim/vimoutliner
 cross-avr/avr-libc
 cross-avr/binutils
+cross-avr/binutils:2.34
 cross-avr/gcc
 dev-embedded/arduino
 dev-python/html2text

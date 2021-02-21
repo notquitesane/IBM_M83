@@ -12,3 +12,5 @@
 >=app-benchmarks/nbench-2.2.3-r1 freedist
 # required by app-arch/unrar (argument)
 =app-arch/unrar-5.9.4 unRAR
+app-arch/unrar unRAR @BINARY-REDISTRIBUTABLE
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code BSD-4 all-rights-reserved @BINARY-REDISTRIBUTABLE GPL-2 ISC GPL-2+ @FSF-APPROVED-OTHER @FSF-APPROVED MPL-1.1 @GPL-COMPATIBLE BSD-2 MIT BSD GPL-3 @OSI-APPROVED
