@@ -12,7 +12,7 @@ x11-base/xorg-drivers video_cards_fbdev video_cards_vesa
 # required by media-gfx/cura-4.7.0::gentoo
 # required by media-gfx/cura (argument)
 >=dev-python/numpy-1.19.1 lapack
-www-client/palemoon -official-branding
+www-client/palemoon -official-branding gtk2
 # required by dev-python/setuptools-50.3.0::gentoo
 # required by dev-python/pylibacl-0.5.4_p20191217::gentoo
 # required by app-backup/rdiff-backup-2.0.0::gentoo
@@ -375,3 +375,10 @@ dev-python/jinja python_targets_python3_7
 # required by dev-ruby/kpeg-1.1.0-r1::gentoo[ruby_targets_ruby26,-test]
 >=virtual/ruby-ssl-11 ruby_targets_ruby25
 cross-avr/binutils -gold
+# required by dev-python/httplib2-0.19.0-r1::gentoo
+# required by dev-python/google-auth-httplib2-0.0.4::gentoo
+# required by dev-python/google-api-python-client-1.8.3-r1::gentoo[-test]
+# required by app-misc/gcalcli-4.2.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyparsing-2.4.7-r1 python_targets_python3_7
