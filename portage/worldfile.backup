@@ -123,7 +123,6 @@ app-portage/world-mv
 app-shells/auto-fu-zsh
 app-shells/fast-syntax-highlighting
 app-shells/gentoo-zsh-completions
-app-shells/powerline
 app-shells/set_prompt
 app-shells/thefuck
 app-shells/zsh-autosuggestions
@@ -166,6 +165,7 @@ dev-vcs/hub
 games-board/xmahjongg
 games-misc/fortune-mod-bofh-excuses
 games-misc/fortune-mod-chucknorris
+games-misc/fortune-mod-kernelcookies
 games-misc/fortune-mod-osfortune
 games-misc/fortune-mod-tao
 games-misc/fortune-mod-taow
@@ -179,7 +179,6 @@ mail-filter/bogofilter
 mail-filter/mailfilter
 mail-mta/msmtp
 media-fonts/croscorefonts
-media-fonts/powerline-symbols
 media-fonts/terminus-font
 media-gfx/aview
 media-gfx/cura

@@ -265,7 +265,6 @@ dev-python/jinja python_targets_python3_7
 # required by app-text/calibre-4.22.0::gentoo[python_single_target_python3_8]
 # required by @selected
 # required by @world (argument)
->=dev-qt/qtwebengine-5.15.2 widgets
 # required by dev-lang/ruby-2.5.8::gentoo
 # required by virtual/ruby-ssl-11::gentoo[ruby_targets_ruby25]
 # required by dev-ruby/racc-1.4.14::gentoo[ruby_targets_ruby25]
@@ -382,3 +381,6 @@ cross-avr/binutils -gold
 # required by @selected
 # required by @world (argument)
 >=dev-python/pyparsing-2.4.7-r1 python_targets_python3_7
+app-misc/powerline tmux extra vim rc man python_targets_python3_7
+sys-libs/zlib static-libs minizip
+dev-libs/boost icu

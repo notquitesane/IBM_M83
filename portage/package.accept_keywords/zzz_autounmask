@@ -4,3 +4,31 @@
 =dev-embedded/arduino-1.8.13 ~amd64
 # required by sys-kernel/kccmp (argument)
 >=sys-kernel/kccmp-0.3-r1 ~amd64
+# required by =app-shells/antigen-2.2.3::bgo-overlay (argument)
+>=app-shells/antigen-2.2.3 ~amd64
+# required by =app-vim/indentLine-2.0 (argument)
+=app-vim/indentLine-2.0 ~amd64
+# required by =app-vim/vim-commentary-1.3_p20180530::gentoo (argument)
+=app-vim/vim-commentary-1.3_p20180530 ~amd64
+# required by =app-vim/vim-clang-format-0_pre20200506::gentoo (argument)
+=app-vim/vim-clang-format-0_pre20200506 ~amd64
+# required by =app-vim/vimagit-1.7.3::gentoo (argument)
+=app-vim/vimagit-1.7.3 ~amd64
+# required by =app-vim/youcompleteme-20210207::tatsh-overlay (argument)
+=app-vim/youcompleteme-20210207 ~amd64
+# required by app-vim/youcompleteme-20210207::tatsh-overlay[python_single_target_python3_8]
+# required by =app-vim/youcompleteme-20210207::tatsh-overlay (argument)
+=dev-python/requests-futures-1.0.0-r2 ~amd64
+# required by app-vim/youcompleteme-20210207::tatsh-overlay[-python_single_target_python3_9,python_single_target_python3_8,-python_single_target_python3_7]
+# required by =app-vim/youcompleteme-20210207::tatsh-overlay (argument)
+=dev-util/ycmd-20210221 ~amd64
+# required by =app-misc/powerline-2.7::ROKO__ (argument)
+=app-misc/powerline-2.7 ~amd64
+# required by =games-misc/fortune-mod-kernelcookies-9::gentoo (argument)
+=games-misc/fortune-mod-kernelcookies-9 ~amd64
+# required by =app-shells/zsh-histdb-0_pre20200405::guru (argument)
+=app-shells/zsh-histdb-0_pre20200405 ~amd64
+# required by app-shells/nice-exit-code (argument)
+=app-shells/nice-exit-code-0_pre20200117 ~amd64
+# required by =app-shells/rc-1.7.4-r1::gentoo (argument)
+=app-shells/rc-1.7.4-r1 ~amd64
