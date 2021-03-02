@@ -387,3 +387,4 @@ dev-libs/boost icu
 dev-qt/qtgui udev X jpeg
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
+net-vpn/openvpn eamples
