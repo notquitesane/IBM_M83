@@ -47,3 +47,6 @@
 # required by @world (argument)
 # /etc/portage/package.mask/overlays:
 =app-shells/auto-fu-zsh-0.0.1.12_p0
+# required by =app-portage/portconf-9999::guru (argument)
+# /etc/portage/package.mask/overlays:
+>=app-portage/portconf-9999
