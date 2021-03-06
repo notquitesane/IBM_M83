@@ -128,7 +128,7 @@ app-shells/thefuck
 app-shells/zsh-autosuggestions
 app-shells/zsh-completions
 app-shells/zsh-syntax-highlighting
-app-text/calibre
+app-text/fbreader
 app-text/html2text
 app-text/poppler
 app-text/qpdf
@@ -202,6 +202,7 @@ games-misc/wtf
 games-strategy/dopewars
 mail-client/mutt
 mail-client/mutt-wizard
+mail-client/neomutt
 mail-filter/bmf
 mail-filter/bogofilter
 mail-filter/mailfilter
@@ -269,6 +270,7 @@ net-misc/throttle
 net-misc/youtube-dl
 net-p2p/rtorrent
 net-p2p/torrentinfo
+net-vpn/openvpn
 sci-calculators/galculator
 sci-calculators/grpn
 sci-calculators/units

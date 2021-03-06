@@ -60,3 +60,69 @@
 =app-shells/auto-fu-zsh-0.0.1.12_p0 ~amd64
 # required by =app-portage/portconf-9999::guru (argument)
 >=app-portage/portconf-9999 **
+# required by bootchart2 (argument)
+>=app-benchmarks/bootchart2-0.14.8-r1 ~amd64
+# required by filebench (argument)
+>=app-benchmarks/filebench-1.4.9.1-r1 ~amd64
+# required by ioping (argument)
+>=app-benchmarks/ioping-1.1 ~amd64
+# required by unhide (argument)
+>=app-forensics/unhide-20130526 ~amd64
+# required by btail (argument)
+>=app-misc/btail-0.3-r1 ~amd64
+# required by app-misc/gcalcli (argument)
+>=app-misc/gcalcli-4.2.0-r1 ~amd64
+# required by app-portage/logclean (argument)
+>=app-portage/logclean-18.4.1 ~amd64
+# required by app-officeext/languagetool (argument)
+>=app-officeext/languagetool-5.1.3 ~amd64
+# required by app-shells/thefuck (argument)
+>=app-shells/thefuck-3.30 ~amd64
+# required by games-board/xmahjongg (argument)
+>=games-board/xmahjongg-3.7-r1 ~amd64
+# required by games-misc/fortune-mod-osfortune (argument)
+>=games-misc/fortune-mod-osfortune-1 ~amd64
+# required by games-misc/fortune-mod-tao (argument)
+>=games-misc/fortune-mod-tao-1 ~amd64
+# required by app-portage/golop (argument)
+=app-portage/golop-0.0.1-r1 ~amd64
+# required by dev-libs/libcharon (argument)
+>=dev-libs/libcharon-4.8.0 ~amd64
+# required by dev-libs/libsavitar (argument)
+>=dev-libs/libsavitar-4.8.0 ~amd64
+# required by dev-vcs/hub (argument)
+>=dev-vcs/hub-2.14.2 ~amd64
+# required by dev-libs/stb (argument)
+>=dev-libs/stb-20200713 ~amd64
+# required by app-portage/showem (argument)
+>=app-portage/showem-1.0.3 ~amd64
+# required by dev-python/pynest2d (argument)
+>=dev-python/pynest2d-4.8.0 ~amd64
+# required by games-misc/fortune-mod-bofh-excuses (argument)
+>=games-misc/fortune-mod-bofh-excuses-1.2-r1 ~amd64
+# required by dev-python/python-linux-procfs (argument)
+>=dev-python/python-linux-procfs-0.6.3 ~amd64
+# required by dev-python/uranium (argument)
+>=dev-python/uranium-4.8.0 ~amd64
+# required by app-vim/languagetool (argument)
+>=app-vim/languagetool-1.30 ~amd64
+# required by dev-python/pafy (argument)
+=dev-python/pafy-0.5.5 ~amd64
+# required by app-misc/grc (argument)
+>=app-misc/grc-1.11.3 ~amd64
+# required by app-text/languagetool (argument)
+>=app-text/languagetool-4.6 ~amd64
+# required by games-misc/fortune-mod-chucknorris (argument)
+>=games-misc/fortune-mod-chucknorris-0.1 ~amd64
+# required by app-portage/diffmask (argument)
+=app-portage/diffmask-0.3.3-r4 ~amd64
+# required by dev-libs/libnest2d (argument)
+>=dev-libs/libnest2d-0.4 ~amd64
+# required by dev-libs/libarcus (argument)
+>=dev-libs/libarcus-4.8.0 ~amd64
+# required by app-shells/powerline (argument)
+=app-shells/powerline-2.7-r2 ~amd64
+# required by dev-libs/clipper (argument)
+>=dev-libs/clipper-6.4.2 ~amd64
+# required by dev-util/cligh (argument)
+=dev-util/cligh-0.3 ~amd64

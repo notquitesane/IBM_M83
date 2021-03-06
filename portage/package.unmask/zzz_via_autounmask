@@ -50,3 +50,6 @@
 # required by =app-portage/portconf-9999::guru (argument)
 # /etc/portage/package.mask/overlays:
 >=app-portage/portconf-9999
+# required by dev-python/requests-futures (argument)
+# /etc/portage/package.mask/overlays:
+>=dev-python/requests-futures-1.0.0-r2
