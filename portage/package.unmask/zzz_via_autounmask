@@ -1,9 +1,8 @@
+# A
+# A
 # required by media-tv/droidcam (argument)
 # /etc/portage/package.mask/guru-repo:
-=media-tv/droidcam-1.5
-# required by www-client/palemoon::palemoon (argument)
 # /etc/portage/package.mask/overlays:
->=www-client/palemoon-29.0.1
 # required by @selected
 # required by @world (argument)
 # /etc/portage/package.mask/overlays:
@@ -23,7 +22,6 @@
 # required by @selected
 # required by @world (argument)
 # /etc/portage/package.mask/overlays:
->=sys-kernel/kccmp-0.3-r1
 # required by @selected
 # required by @world (argument)
 # /etc/portage/package.mask/overlays:
@@ -50,6 +48,33 @@
 # required by =app-portage/portconf-9999::guru (argument)
 # /etc/portage/package.mask/overlays:
 >=app-portage/portconf-9999
-# required by dev-python/requests-futures (argument)
+# required by palemoon-bin (argument)
 # /etc/portage/package.mask/overlays:
->=dev-python/requests-futures-1.0.0-r2
+>=www-client/palemoon-bin-29.0.1
+# required by app-portage/logclean::mv (argument)
+# /etc/portage/package.mask/overlays:
+>=app-portage/logclean-18.4.1
+# required by games-misc/fortune-mod-george-carlin (argument)
+# /etc/portage/package.mask/overlays:
+>=games-misc/fortune-mod-george-carlin-0.1
+# required by x11-misc/key-scripter (argument)
+# /etc/portage/package.mask/overlays:
+>=x11-misc/key-scripter-1.6
+# required by x11-plugins/multiload-ng (argument)
+# /etc/portage/package.mask/overlays:
+=x11-plugins/multiload-ng-1.4.2
+# required by sys-apps/mkstage4 (argument)
+# /etc/portage/package.mask/overlays:
+>=sys-apps/mkstage4-3.6
+# required by games-misc/fortune-mod-steven-wright (argument)
+# /etc/portage/package.mask/overlays:
+>=games-misc/fortune-mod-steven-wright-0.1
+# required by net-misc/ssh-tools (argument)
+# /etc/portage/package.mask/overlays:
+>=net-misc/ssh-tools-1.5
+# required by games-misc/fortune-mod-carl-sagan (argument)
+# /etc/portage/package.mask/overlays:
+>=games-misc/fortune-mod-carl-sagan-0.1
+# required by app-shells/antigen (argument)
+# /etc/portage/package.mask/overlays:
+>=app-shells/antigen-2.2.3

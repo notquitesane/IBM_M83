@@ -16,3 +16,9 @@ app-arch/unrar unRAR @BINARY-REDISTRIBUTABLE
 sys-kernel/linux-firmware linux-fw-redistributable no-source-code BSD-4 all-rights-reserved @BINARY-REDISTRIBUTABLE GPL-2 ISC GPL-2+ @FSF-APPROVED-OTHER @FSF-APPROVED MPL-1.1 @GPL-COMPATIBLE BSD-2 MIT BSD GPL-3 @OSI-APPROVED
 # required by >=app-vim/errsign-0.1-r1 (argument)
 >=app-vim/errsign-0.1-r1 vim.org
+# required by games-misc/fortune-mod-carl-sagan (argument)
+>=games-misc/fortune-mod-carl-sagan-0.1 as-is
+# required by games-misc/fortune-mod-george-carlin (argument)
+>=games-misc/fortune-mod-george-carlin-0.1 as-is
+# required by sys-block/hpssacli (argument)
+=sys-block/hpssacli-2.40.13.0-r1 hpe

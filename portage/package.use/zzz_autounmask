@@ -177,10 +177,10 @@ sys-block/parted device-mapper
 sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes
 sys-cluster/openmpi heterogeneous mpi-threads romio
 sys-devel/binutils static-libs -gold
-sys-devel/clang llvm_targets_AArch64
+sys-devel/clang llvm_targets_AArch64 llvm_targets_AVR -llvm_targets_AMDGPU -llvm_targets_NVPTX
 sys-devel/gcc doc objc objc-gc graphite objc++
 >=sys-devel/llvm-10.0.0 llvm_targets_NVPTX llvm_targets_AMDGPU
-sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64
+sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64 llvm_targets_AVR
 sys-firmware/ipxe lkrn
 sys-fs/cryptsetup -argon2 -gcrypt -luks1_default -nettle openssl reencrypt static urandom
 sys-fs/dd-rescue cpu_flags_x86_sse4_2

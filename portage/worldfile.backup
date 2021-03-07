@@ -71,7 +71,6 @@ app-forensics/chkrootkit
 app-forensics/cmospwd
 app-forensics/rkhunter
 app-forensics/unhide
-app-laptop/dispad
 app-laptop/laptop-mode-tools
 app-misc/actkbd
 app-misc/asciinema
@@ -283,6 +282,7 @@ sys-apps/etckeeper
 sys-apps/ethtool
 sys-apps/fakechroot
 sys-apps/hdparm
+sys-apps/hwloc
 sys-apps/lm-sensors
 sys-apps/lshw
 sys-apps/moreutils
@@ -300,6 +300,7 @@ sys-block/blktrace
 sys-block/di
 sys-block/f3
 sys-block/gparted
+sys-block/hpssacli
 sys-block/io-scheduler-udev-rules
 sys-boot/grub
 sys-devel/crossdev
@@ -317,7 +318,6 @@ sys-fs/f2fs-tools
 sys-fs/reiserfsprogs
 sys-fs/squashfs-tools
 sys-kernel/dracut
-sys-kernel/kccmp
 sys-kernel/linux-firmware
 sys-libs/gpm
 sys-power/acpi
@@ -344,7 +344,6 @@ virtual/libelf
 www-client/elinks
 www-client/google-chrome
 www-client/opera
-www-client/palemoon
 www-misc/monitorix
 www-misc/profile-sync-daemon::gentoo
 x11-apps/scripts

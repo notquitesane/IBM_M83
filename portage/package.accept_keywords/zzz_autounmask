@@ -2,8 +2,6 @@
 =media-gfx/sweethome3d-bin-6.4.2 ~amd64
 # required by =dev-embedded/arduino-1.8.13 (argument)
 =dev-embedded/arduino-1.8.13 ~amd64
-# required by sys-kernel/kccmp (argument)
->=sys-kernel/kccmp-0.3-r1 ~amd64
 # required by =app-shells/antigen-2.2.3::bgo-overlay (argument)
 >=app-shells/antigen-2.2.3 ~amd64
 # required by =app-vim/indentLine-2.0 (argument)
@@ -18,7 +16,6 @@
 =app-vim/youcompleteme-20210207 ~amd64
 # required by app-vim/youcompleteme-20210207::tatsh-overlay[python_single_target_python3_8]
 # required by =app-vim/youcompleteme-20210207::tatsh-overlay (argument)
-=dev-python/requests-futures-1.0.0-r2 ~amd64
 # required by app-vim/youcompleteme-20210207::tatsh-overlay[-python_single_target_python3_9,python_single_target_python3_8,-python_single_target_python3_7]
 # required by =app-vim/youcompleteme-20210207::tatsh-overlay (argument)
 =dev-util/ycmd-20210221 ~amd64
@@ -126,3 +123,64 @@
 >=dev-libs/clipper-6.4.2 ~amd64
 # required by dev-util/cligh (argument)
 =dev-util/cligh-0.3 ~amd64
+# required by media-sound/mps-youtube (argument)
+=media-sound/mps-youtube-0.2.8-r2 ~amd64
+# required by @selected
+# required by @world (argument)
+=net-im/zoom-5.5.7938.0228 ~amd64
+# required by sys-fs/archivemount (argument)
+=sys-fs/archivemount-0.8.12 ~amd64
+# required by net-mail/renattach (argument)
+=net-mail/renattach-1.2.4-r1 ~amd64
+# required by media-gfx/qiv::gentoo (argument)
+=media-gfx/qiv-2.3.2-r1 ~amd64
+# required by sci-calculators/grpn (argument)
+=sci-calculators/grpn-1.4.0 ~amd64
+# required by x11-misc/xidle (argument)
+>=x11-misc/xidle-26052015 ~amd64
+# required by games-misc/funny-manpages (argument)
+>=games-misc/funny-manpages-2.3 ~amd64
+# required by x11-misc/xcape (argument)
+>=x11-misc/xcape-1.2 ~amd64
+# required by cura (argument)
+>=media-gfx/cura-4.8.0 ~amd64
+# required by daemontools-encore (argument)
+>=sys-process/daemontools-encore-1.11 ~amd64
+# required by sys-apps/tuned (argument)
+>=sys-apps/tuned-2.15.0-r1 ~amd64
+# required by media-gfx/termtosvg (argument)
+>=media-gfx/termtosvg-1.1.0 ~amd64
+# required by app-backup/simplebackup (argument)
+>=app-backup/simplebackup-1.8.1-r1 ~amd64
+# required by games-strategy/dopewars (argument)
+>=games-strategy/dopewars-1.6.1 ~amd64
+# required by games-misc/fortune-mod-taow (argument)
+>=games-misc/fortune-mod-taow-1.0 ~amd64
+# required by net-irc/irssi-xmpp (argument)
+>=net-irc/irssi-xmpp-0.54 ~amd64
+# required by app-admin/yadm (argument)
+>=app-admin/yadm-2.4.0 ~amd64
+# required by media-gfx/fim (argument)
+>=media-gfx/fim-0.5_rc3 ~amd64
+# required by media-gfx/curaengine (argument)
+>=media-gfx/curaengine-4.8.0 ~amd64
+# required by games-misc/wtf (argument)
+>=games-misc/wtf-20210130 ~amd64
+# required by media-gfx/fdm-materials (argument)
+>=media-gfx/fdm-materials-4.8.0 ~amd64
+# required by net-analyzer/ipband (argument)
+>=net-analyzer/ipband-0.8.1-r2 ~amd64
+# required by app-admin/rcm (argument)
+>=app-admin/rcm-1.3.4 ~amd64
+# required by app-backup/borgweb (argument)
+>=app-backup/borgweb-0.3.0 ~amd64
+# required by media-gfx/jpegtoavi (argument)
+>=media-gfx/jpegtoavi-1.5 ~amd64
+# required by net-misc/lanmap (argument)
+>=net-misc/lanmap-81-r2 ~amd64
+# required by mail-client/mutt-wizard (argument)
+=mail-client/mutt-wizard-3.2.1 ~amd64
+# required by dev-java/jna:4 (argument)
+>=dev-java/jna-4.2.2-r1 ~amd64
+# required by github-cli (argument)
+=dev-util/github-cli-1.6.2 ~amd64
