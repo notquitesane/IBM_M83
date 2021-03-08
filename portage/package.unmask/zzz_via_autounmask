@@ -78,3 +78,6 @@
 # required by app-shells/antigen (argument)
 # /etc/portage/package.mask/overlays:
 >=app-shells/antigen-2.2.3
+# required by =www-client/palemoon-28.17.0 (argument)
+# /etc/portage/package.mask/overlays:
+=www-client/palemoon-28.17.0
