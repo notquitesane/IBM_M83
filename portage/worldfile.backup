@@ -345,6 +345,7 @@ virtual/libelf
 www-client/elinks
 www-client/google-chrome
 www-client/opera
+www-client/palemoon
 www-misc/monitorix
 www-misc/profile-sync-daemon::gentoo
 x11-apps/scripts
@@ -389,3 +390,4 @@ x11-terms/root-tail
 x11-terms/rxvt-unicode
 x11-terms/st
 x11-terms/xterm
+media-video/rtmpdump

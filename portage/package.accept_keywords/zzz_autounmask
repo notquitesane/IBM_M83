@@ -184,3 +184,5 @@
 >=dev-java/jna-4.2.2-r1 ~amd64
 # required by github-cli (argument)
 =dev-util/github-cli-1.6.2 ~amd64
+# required by =net-misc/youtube-dl-2021.03.03 (argument)
+=net-misc/youtube-dl-2021.03.03 ~amd64
