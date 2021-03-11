@@ -81,3 +81,6 @@
 # required by =www-client/palemoon-28.17.0 (argument)
 # /etc/portage/package.mask/overlays:
 =www-client/palemoon-28.17.0
+# required by www-client/serpent (argument)
+# /etc/portage/package.mask/overlays:
+>=www-client/serpent-2021.01.05

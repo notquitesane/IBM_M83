@@ -186,3 +186,5 @@
 =dev-util/github-cli-1.6.2 ~amd64
 # required by =net-misc/youtube-dl-2021.03.03 (argument)
 =net-misc/youtube-dl-2021.03.03 ~amd64
+# required by www-client/serpent (argument)
+>=www-client/serpent-2021.01.05 ~amd64

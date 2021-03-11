@@ -447,3 +447,4 @@ net-vpn/openvpn eamples
 >=dev-python/zipp-3.4.0 python_targets_python3_7
 www-client/palemoon-bin gtk3 startup-notification
 x11-plugins/multiload-ng standalone experimental systray -xfce4 -lxde -mate
+www-client/serpent startup-notification
