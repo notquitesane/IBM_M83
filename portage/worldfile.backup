@@ -343,6 +343,7 @@ sys-process/time
 sys-process/wait_on_pid
 sys-process/watchpid
 virtual/libelf
+www-client/brave-bin
 www-client/elinks
 www-client/google-chrome
 www-client/opera

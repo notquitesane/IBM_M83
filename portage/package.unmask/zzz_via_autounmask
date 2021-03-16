@@ -84,3 +84,6 @@
 # required by www-client/serpent (argument)
 # /etc/portage/package.mask/overlays:
 >=www-client/serpent-2021.01.05
+# required by www-client/brave-bin (argument)
+# /etc/portage/package.mask/overlays:
+>=www-client/brave-bin-1.21.73
