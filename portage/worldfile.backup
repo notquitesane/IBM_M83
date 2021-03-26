@@ -247,6 +247,7 @@ net-analyzer/nethogs
 net-analyzer/ngrep
 net-analyzer/nmap
 net-analyzer/prettyping
+net-analyzer/speedtest-cli
 net-dns/dnsmasq
 net-fs/nfs-utils
 net-fs/sshfs
