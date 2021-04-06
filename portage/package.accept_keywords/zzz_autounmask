@@ -186,5 +186,20 @@
 =dev-util/github-cli-1.6.2 ~amd64
 # required by =net-misc/youtube-dl-2021.03.03 (argument)
 =net-misc/youtube-dl-2021.03.03 ~amd64
-# required by www-client/serpent (argument)
->=www-client/serpent-2021.01.05 ~amd64
+# required by =www-client/serpent-2020.11.25 (argument)
+=www-client/serpent-2020.11.25 ~amd64
+# required by media-fonts/fonts-meta-1-r2::gentoo[free,latin]
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/signika-1.001 ~amd64
+# required by media-fonts/fonts-meta-1-r2::gentoo[free,latin]
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/courier-prime-1.203 ~amd64
+# required by media-fonts/fonts-meta-1-r2::gentoo[free]
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/heuristica-1.0.2 ~amd64
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/fonts-meta-1-r2 ~amd64
+# required by app-misc/tai (argument)
+>=app-misc/tai-0.0.3 ~amd64
+# required by app-misc/afetch (argument)
+>=app-misc/afetch-2.1.0 ~amd64

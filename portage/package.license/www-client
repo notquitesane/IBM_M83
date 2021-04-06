@@ -22,3 +22,6 @@ sys-kernel/linux-firmware linux-fw-redistributable no-source-code BSD-4 all-righ
 >=games-misc/fortune-mod-george-carlin-0.1 as-is
 # required by sys-block/hpssacli (argument)
 =sys-block/hpssacli-2.40.13.0-r1 hpe
+# required by media-fonts/fonts-meta-1-r2::gentoo[free,latin]
+# required by media-fonts/fonts-meta (argument)
+>=media-fonts/font-bh-ttf-1.0.3-r2 bh-luxi

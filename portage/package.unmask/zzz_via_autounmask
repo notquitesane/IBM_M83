@@ -87,3 +87,12 @@
 # required by www-client/brave-bin (argument)
 # /etc/portage/package.mask/overlays:
 >=www-client/brave-bin-1.21.73
+# required by =www-client/serpent-2020.11.25 (argument)
+# /etc/portage/package.mask/overlays:
+=www-client/serpent-2020.11.25
+# required by app-misc/tai (argument)
+# /etc/portage/package.mask/overlays:
+>=app-misc/tai-0.0.3
+# required by app-misc/afetch (argument)
+# /etc/portage/package.mask/overlays:
+>=app-misc/afetch-2.1.0
