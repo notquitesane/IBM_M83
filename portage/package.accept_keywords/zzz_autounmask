@@ -203,3 +203,11 @@
 >=app-misc/tai-0.0.3 ~amd64
 # required by app-misc/afetch (argument)
 >=app-misc/afetch-2.1.0 ~amd64
+# required by dev-ruby/colorls (argument)
+>=dev-ruby/colorls-1.1.0 ~amd64
+# required by dev-ruby/filesize (argument)
+>=dev-ruby/filesize-0.2.0 ~amd64
+# required by dev-ruby/clocale (argument)
+>=dev-ruby/clocale-0.0.3 ~amd64
+# required by dev-ruby/manpages (argument)
+>=dev-ruby/manpages-0.6.1 ~amd64
