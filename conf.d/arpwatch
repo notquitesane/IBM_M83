@@ -14,4 +14,5 @@
 ARPWATCH_IFACE="lo"
 
 # Additional options to pass to arpwatch.
+# See arpwatch(8)
 ARPWATCH_OPTS="-N -p"
