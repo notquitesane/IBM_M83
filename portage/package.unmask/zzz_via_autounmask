@@ -1,11 +1,3 @@
-# A
-# A
-# required by media-tv/droidcam (argument)
-# /etc/portage/package.mask/guru-repo:
-# /etc/portage/package.mask/overlays:
-# required by @selected
-# required by @world (argument)
-# /etc/portage/package.mask/overlays:
 >=app-portage/portage-bashrc-mv-20.3
 # required by @selected
 # required by @world (argument)
@@ -48,9 +40,7 @@
 # required by =app-portage/portconf-9999::guru (argument)
 # /etc/portage/package.mask/overlays:
 >=app-portage/portconf-9999
-# required by palemoon-bin (argument)
 # /etc/portage/package.mask/overlays:
->=www-client/palemoon-bin-29.0.1
 # required by app-portage/logclean::mv (argument)
 # /etc/portage/package.mask/overlays:
 >=app-portage/logclean-18.4.1
@@ -78,9 +68,7 @@
 # required by app-shells/antigen (argument)
 # /etc/portage/package.mask/overlays:
 >=app-shells/antigen-2.2.3
-# required by =www-client/palemoon-28.17.0 (argument)
 # /etc/portage/package.mask/overlays:
-=www-client/palemoon-28.17.0
 # required by www-client/serpent (argument)
 # /etc/portage/package.mask/overlays:
 >=www-client/serpent-2021.01.05
@@ -96,3 +84,6 @@
 # required by app-misc/afetch (argument)
 # /etc/portage/package.mask/overlays:
 >=app-misc/afetch-2.1.0
+# required by =www-client/palemoon-28.10.0 (argument)
+# /etc/portage/package.mask/overlays:
+=www-client/palemoon-28.11.0

@@ -172,7 +172,6 @@ app-vim/vim-clang-format
 app-vim/vim-commentary
 app-vim/vim-misc
 app-vim/vim-spell-en
-app-vim/vim-tmux
 app-vim/vimagit
 app-vim/vimbuddy
 app-vim/vimoutliner
