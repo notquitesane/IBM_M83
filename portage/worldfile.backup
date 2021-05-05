@@ -174,7 +174,6 @@ app-vim/vim-misc
 app-vim/vim-spell-en
 app-vim/vimagit
 app-vim/vimbuddy
-app-vim/vimoutliner
 app-vim/voom
 cross-avr/avr-libc
 cross-avr/binutils
