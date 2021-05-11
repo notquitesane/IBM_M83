@@ -382,7 +382,7 @@ cross-avr/binutils -gold
 >=dev-python/pyparsing-2.4.7-r1 
 app-misc/powerline tmux extra vim rc man 
 sys-libs/zlib static-libs minizip
-dev-libs/boost icu
+dev-libs/boost icu context
 dev-qt/qtgui udev X jpeg evdev
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets

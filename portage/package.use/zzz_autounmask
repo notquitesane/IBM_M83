@@ -219,7 +219,7 @@ x11-libs/libva X vdpau
 x11-libs/libxcb xkb
 x11-libs/libxkbcommon X
 x11-libs/pango X
-x11-libs/wxGTK X libnotify sdl tiff opengl webkit
+x11-libs/wxGTK X libnotify sdl tiff opengl webkit gstreamer
 x11-misc/dzen xft xpm
 x11-misc/xbindkeys tk
 x11-misc/xscreensaver jpeg perl
