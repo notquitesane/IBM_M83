@@ -100,7 +100,6 @@ app-office/libreoffice
 app-officeext/languagetool
 app-officeext/ooo2gd
 app-portage/cpuid2cpuflags
-app-portage/demerge
 app-portage/diffmask
 app-portage/eix
 app-portage/elogv
