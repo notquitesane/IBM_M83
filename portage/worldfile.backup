@@ -85,7 +85,6 @@ app-misc/delay
 app-misc/detox
 app-misc/fsniper
 app-misc/gcalcli
-app-misc/gcstar
 app-misc/grc
 app-misc/jail
 app-misc/leave
@@ -209,7 +208,6 @@ media-gfx/cura
 media-gfx/feh
 media-gfx/fim
 media-gfx/gifsicle
-media-gfx/gimageview
 media-gfx/gimp
 media-gfx/gpicview
 media-gfx/imagemagick
