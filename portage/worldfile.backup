@@ -28,6 +28,7 @@ app-admin/xtail
 app-admin/yadm
 app-arch/advancecomp
 app-arch/dump
+app-arch/p7zip
 app-arch/pxz
 app-arch/unrar
 app-backup/borgbackup
