@@ -219,3 +219,8 @@
 # required by sci-electronics/kicad-5.1.9::gentoo[oce]
 # required by kicad (argument)
 =sci-libs/oce-0.18.3-r2 ~amd64
+# required by x11-misc/safeeyes (argument)
+=x11-misc/safeeyes-2.1.3 ~amd64
+# required by x11-misc/safeeyes-2.1.3::gentoo
+# required by x11-misc/safeeyes (argument)
+=x11-misc/xprintidle-2.1 ~amd64
