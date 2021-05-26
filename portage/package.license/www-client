@@ -26,3 +26,5 @@ sys-kernel/linux-firmware linux-fw-redistributable no-source-code BSD-4 all-righ
 # required by media-fonts/fonts-meta (argument)
 >=media-fonts/font-bh-ttf-1.0.3-r2 bh-luxi
 app-arch/p7zip unRAR
+# required by media-sound/mbox (argument)
+>=media-sound/mbox-0.7.2 GPL

@@ -456,3 +456,4 @@ dev-ruby/clocale ruby_targets_ruby25
 dev-ruby/manpages ruby_targets_ruby25
 dev-python/google-api-core 
 sys-libs/libseccomp static-libs
+sci-electronics/kicad github

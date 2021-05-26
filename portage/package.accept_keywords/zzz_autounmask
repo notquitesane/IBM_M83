@@ -224,3 +224,13 @@
 # required by x11-misc/safeeyes-2.1.3::gentoo
 # required by x11-misc/safeeyes (argument)
 =x11-misc/xprintidle-2.1 ~amd64
+# required by media-sound/mbox (argument)
+=media-sound/mbox-0.7.2 ~amd64
+# required by sys-process/nq (argument)
+=sys-process/nq-0.4 ~amd64
+# required by sys-process/ts (argument)
+=sys-process/ts-0.5.3 ~amd64
+# required by sys-process/itop (argument)
+=sys-process/itop-0.1 ~amd64
+# required by =x11-libs/wxGTK-3.0.5.1 (argument)
+=x11-libs/wxGTK-3.0.5.1 ~amd64

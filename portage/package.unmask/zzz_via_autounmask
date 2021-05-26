@@ -87,3 +87,18 @@
 # required by =www-client/palemoon-28.10.0 (argument)
 # /etc/portage/package.mask/overlays:
 =www-client/palemoon-28.11.0
+# required by media-sound/mbox (argument)
+# /etc/portage/package.mask/overlays:
+=media-sound/mbox-0.7.2
+# required by sys-power/acpitail (argument)
+# /etc/portage/package.mask/overlays:
+=sys-power/acpitail-0.1
+# required by sys-process/itop (argument)
+# /etc/portage/package.mask/overlays:
+=sys-process/itop-0.1
+# required by sys-process/nq (argument)
+# /etc/portage/package.mask/overlays:
+=sys-process/nq-0.4
+# required by sys-process/ts (argument)
+# /etc/portage/package.mask/overlays:
+=sys-process/ts-0.5.3

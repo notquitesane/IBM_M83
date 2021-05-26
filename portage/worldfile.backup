@@ -343,7 +343,6 @@ www-client/brave-bin
 www-client/elinks
 www-client/google-chrome
 www-client/opera
-www-client/palemoon
 www-client/serpent
 www-misc/monitorix
 www-misc/profile-sync-daemon::gentoo
@@ -369,6 +368,7 @@ x11-misc/dmenu
 x11-misc/imwheel
 x11-misc/lsw
 x11-misc/qcomicbook
+x11-misc/safeeyes
 x11-misc/unclutter
 x11-misc/urxvt-perls
 x11-misc/xautomation
