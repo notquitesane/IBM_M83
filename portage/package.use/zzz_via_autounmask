@@ -20,7 +20,7 @@ x11-base/xorg-drivers video_cards_fbdev video_cards_vesa
 >=dev-python/certifi-10001-r1 python_targets_python3_6
 app-misc/gcalcli 
 app-shells/powerline 
-sys-apps/tuned python_single_target_python3_8
+sys-apps/tuned -python_single_target_python3_8
 dev-python/setuptools 
 dev-python/certifi 
 # required by dev-python/python-dateutil-2.8.1-r2::gentoo
@@ -457,3 +457,4 @@ dev-ruby/manpages ruby_targets_ruby25
 dev-python/google-api-core 
 sys-libs/libseccomp static-libs
 sci-electronics/kicad github
+sys-process/iotop python_targets_python3_4
