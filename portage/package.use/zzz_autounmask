@@ -92,7 +92,7 @@ media-gfx/imagemagick cxx X heif jpeg -jpeg2k png raw svg tiff xml
 media-gfx/inkscape imagemagick jpeg
 media-gfx/xv jpeg png tiff
 media-libs/flac ogg
-media-libs/freetype X infinality png utils fontforge
+media-libs/freetype X infinality png utils fontforge harfbuzz
 media-libs/gd fontconfig jpeg png truetype
 media-libs/gegl cairo
 media-libs/gst-plugins-bad X

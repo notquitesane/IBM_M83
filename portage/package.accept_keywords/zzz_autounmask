@@ -234,3 +234,5 @@
 =sys-process/itop-0.1 ~amd64
 # required by =x11-libs/wxGTK-3.0.5.1 (argument)
 =x11-libs/wxGTK-3.0.5.1 ~amd64
+# required by net-im/zoom (argument)
+>=net-im/zoom-5.7.26030.0627 ~amd64
