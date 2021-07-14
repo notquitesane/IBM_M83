@@ -236,3 +236,7 @@
 =x11-libs/wxGTK-3.0.5.1 ~amd64
 # required by net-im/zoom (argument)
 >=net-im/zoom-5.7.26030.0627 ~amd64
+# required by =media-gfx/sweethome3d-bin-6.5.2::robert7k (argument)
+=media-gfx/sweethome3d-bin-6.5.2 ~amd64
+# required by =mail-client/mutt-wizard-3.2.1-r1::gentoo (argument)
+=mail-client/mutt-wizard-3.2.1-r1 ~amd64

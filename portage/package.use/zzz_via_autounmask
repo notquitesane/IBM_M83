@@ -457,6 +457,6 @@ dev-ruby/manpages ruby_targets_ruby25
 dev-python/google-api-core 
 sys-libs/libseccomp static-libs
 sci-electronics/kicad github
-sys-process/iotop -python_targets_python3_4 python_targets_python2_7 -python_targets_python3_3
+sys-process/iotop -python_targets_python3_4 -python_targets_python3_3
 dev-libs/libffi pax-kernel
 dev-lang/python-exec python_targets_python2_7

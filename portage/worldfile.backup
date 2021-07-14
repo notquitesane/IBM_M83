@@ -127,7 +127,6 @@ app-shells/zsh-completions
 app-shells/zsh-syntax-highlighting
 app-text/fbreader
 app-text/html2text
-app-text/poppler
 app-text/qpdf
 app-text/wgetpaste
 app-vim/align
@@ -298,7 +297,6 @@ sys-block/blktrace
 sys-block/di
 sys-block/f3
 sys-block/gparted
-sys-block/hpssacli
 sys-block/io-scheduler-udev-rules
 sys-boot/grub
 sys-devel/crossdev
@@ -330,7 +328,6 @@ sys-process/daemontools-encore
 sys-process/dcron
 sys-process/htop
 sys-process/incron
-sys-process/iotop
 sys-process/lsof
 sys-process/nmon
 sys-process/parallel
