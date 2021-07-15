@@ -82,7 +82,7 @@ gnustep-base/gnustep-base -gnutls
 gnustep-base/gnustep-make native-exceptions
 kde-frameworks/kwindowsystem X
 mail-client/mutt berkdb gdbm gpgme
-mail-client/neomutt gpgme notmuch slang
+mail-client/neomutt gpgme notmuch slang sasl
 media-fonts/croscorefonts X
 media-fonts/font-misc-misc X
 media-fonts/powerline-symbols X
@@ -178,7 +178,7 @@ sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes
 sys-cluster/openmpi heterogeneous mpi-threads romio
 sys-devel/binutils static-libs -gold
 sys-devel/clang llvm_targets_AArch64 llvm_targets_AVR -llvm_targets_AMDGPU -llvm_targets_NVPTX
-sys-devel/gcc doc objc objc-gc graphite objc++
+sys-devel/gcc doc objc objc-gc graphite objc++ go vtv
 >=sys-devel/llvm-10.0.0 llvm_targets_NVPTX llvm_targets_AMDGPU
 sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64 llvm_targets_AVR
 sys-firmware/ipxe lkrn
