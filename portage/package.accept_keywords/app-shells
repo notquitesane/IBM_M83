@@ -1,0 +1,11 @@
+>=app-shells/antigen-2.2.3 ~amd64
+=app-shells/auto-fu-zsh-0.0.1.12_p0 ~amd64
+=app-shells/fast-syntax-highlighting-1.5.5 ~amd64
+=app-shells/nice-exit-code-0_pre20200117 ~amd64
+=app-shells/powerline-2.7-r2 ~amd64
+=app-shells/rc-1.7.4-r1 ~amd64
+>=app-shells/runtitle-2.11 ~amd64
+>=app-shells/set_prompt-3.2 ~amd64
+>=app-shells/thefuck-3.30 ~amd64
+=app-shells/zsh-autosuggestions-0.6.4 ~amd64
+=app-shells/zsh-histdb-0_pre20200405 ~amd64

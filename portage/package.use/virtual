@@ -1,0 +1,6 @@
+virtual/ffmpeg X mp3 theora -vaapi -vdpau x264
+virtual/imagemagick-tools jpeg svg png tiff
+virtual/libudev static-libs
+>=virtual/mpi-2.0-r4 cxx
+>=virtual/rubygems-15 ruby_targets_ruby26
+>=virtual/ruby-ssl-11 ruby_targets_ruby26

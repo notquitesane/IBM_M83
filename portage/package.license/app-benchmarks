@@ -1,0 +1,4 @@
+>=app-benchmarks/bonnie-2.0.6-r2 bonnie
+>=app-benchmarks/iozone-3.488 freedist
+>=app-benchmarks/nbench-2.2.3-r1 freedist
+>=app-benchmarks/ramspeed-3.5.0-r2 Alasir

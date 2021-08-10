@@ -1,1 +1,1 @@
->net-misc/youtube-dl-9999::gentoo ~amd64
+>=net-misc/ssh-tools-1.5

@@ -1,0 +1,3 @@
+app-arch/p7zip unRAR
+=app-arch/unrar-5.9.4 unRAR
+app-arch/unrar unRAR @BINARY-REDISTRIBUTABLE

@@ -1,0 +1,2 @@
+app-portage/eix doc sqlite nls
+app-portage/layman mercurial sqlite squashfs sync-plugin-portage
