@@ -270,6 +270,7 @@ net-vpn/openvpn
 sci-calculators/galculator
 sci-calculators/grpn
 sci-calculators/units
+sci-electronics/xcircuit
 sys-apps/bar
 sys-apps/biosdevname
 sys-apps/daemonize

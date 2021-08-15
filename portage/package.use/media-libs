@@ -4,7 +4,7 @@ media-libs/gd fontconfig jpeg png truetype
 media-libs/gegl cairo
 media-libs/gst-plugins-bad X
 media-libs/gst-plugins-base X ogg
-media-libs/harfbuzz cairo icu truetype
+media-libs/harfbuzz cairo icu truetype experimental
 media-libs/imlib2 X gif jpeg mp3 png tiff
 media-libs/jbig2dec png
 media-libs/libass fontconfig

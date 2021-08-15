@@ -8,4 +8,3 @@ x11-libs/libxcb xkb
 >=x11-libs/libxkbcommon-1.0.3 X
 x11-libs/libxkbcommon X
 x11-libs/pango X
-x11-libs/wxGTK X libnotify sdl tiff opengl webkit gstreamer
