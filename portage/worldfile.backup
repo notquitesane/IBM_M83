@@ -341,7 +341,6 @@ www-client/brave-bin
 www-client/elinks
 www-client/google-chrome
 www-client/opera
-www-client/serpent
 www-misc/monitorix
 www-misc/profile-sync-daemon::gentoo
 x11-apps/scripts

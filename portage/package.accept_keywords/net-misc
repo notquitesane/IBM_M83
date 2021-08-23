@@ -1,3 +1,0 @@
->=net-misc/lanmap-81-r2 ~amd64
-=net-misc/youtube-dl-2021.03.03 ~amd64
->net-misc/youtube-dl-9999::gentoo ~amd64

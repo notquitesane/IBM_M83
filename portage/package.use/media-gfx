@@ -1,5 +1,0 @@
-media-gfx/digikam X webkit
-media-gfx/graphviz X cairo pdf svg
-media-gfx/imagemagick cxx X heif jpeg -jpeg2k png raw svg tiff xml
-media-gfx/inkscape imagemagick jpeg
-media-gfx/xv jpeg png tiff

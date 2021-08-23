@@ -1,6 +1,0 @@
-net-libs/glib-networking -gnome
-net-libs/libpcap bluetooth netlink static-libs usb
-net-libs/libssh mbedtls server
-net-libs/nghttp2 jemalloc utils cxx
-net-libs/webkit-gtk X -geolocation -jpeg2k libnotify
-net-libs/zeromq drafts
