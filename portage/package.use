@@ -189,7 +189,7 @@ sci-electronics/kicad github
 sci-libs/fftw quad
 sci-libs/hdf5 mpi
 sci-misc/boinc X
-sys-apps/busybox -make-symlinks math mdev savedconfig -sep-usr -static
+sys-apps/busybox math mdev savedconfig -sep-usr -static
 sys-apps/coreutils gmp
 sys-apps/dbus X
 sys-apps/elfix ptpax
