@@ -1,0 +1,2 @@
+x11-base/xorg-drivers video_cards_fbdev video_cards_vesa
+x11-base/xorg-server xcsecurity xnest suid -elogind

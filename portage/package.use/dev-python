@@ -1,0 +1,5 @@
+dev-python/Babel -python_targets_python2_7
+>=dev-python/numpy-1.19.1 lapack
+>=dev-python/pypax-0.9.5 ptpax
+>=dev-python/PyQt5-5.14.2-r1 declarative
+dev-python/PyQt5 gui network printsupport svg webchannel widgets

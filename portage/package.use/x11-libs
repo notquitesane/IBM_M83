@@ -1,0 +1,10 @@
+x11-libs/cairo X svg
+x11-libs/gdk-pixbuf X jpeg tiff
+x11-libs/gtk+ X
+x11-libs/libdrm libkms video_cards_amdgpu video_cards_nouveau
+x11-libs/libva-intel-driver X
+x11-libs/libva X vdpau
+x11-libs/libxcb xkb
+>=x11-libs/libxkbcommon-1.0.3 X
+x11-libs/libxkbcommon X
+x11-libs/pango X

@@ -1,0 +1,10 @@
+sys-libs/binutils-libs static-libs
+sys-libs/gdbm berkdb
+sys-libs/libblockdev bcache lvm
+sys-libs/libseccomp static-libs
+sys-libs/libunwind static-libs
+sys-libs/ncurses ada
+sys-libs/pam berkdb
+sys-libs/readline utils
+sys-libs/slang png
+sys-libs/zlib static-libs minizip

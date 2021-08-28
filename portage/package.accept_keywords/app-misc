@@ -1,0 +1,6 @@
+>=app-misc/afetch-2.1.0 ~amd64
+>=app-misc/btail-0.3-r1 ~amd64
+>=app-misc/gcalcli-4.2.0-r1 ~amd64
+>=app-misc/grc-1.11.3 ~amd64
+=app-misc/powerline-2.7 ~amd64
+>=app-misc/tai-0.0.3 ~amd64
