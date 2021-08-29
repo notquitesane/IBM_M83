@@ -12,10 +12,12 @@
 # Shift+F7=VEXPAND_SCREEN
 # Shift+Prior=PAGE_UP
 # Shift+Up=SCROLL_UP
+# Control+Shift+Up=SCROLL_UP_TO_MARK
+# Control+Shift+Down=SCROLL_DOWN_TO_MARK
+# Control+Shift+m=SET_MARK
 # Shift+Insert=INSERT_SELECTION
 # Pause=RESET
-# UNUSED=SWITCH_OSC52
-# UNUSED=EXIT_PROGRAM
+# Control+Shift+Return=COPY_MODE
 # Control+Button1="menu:mlterm-menu"
 # Control+Button3="menu:mlconfig"
 
@@ -34,6 +36,7 @@
 # Control+F12="proto:use_local_echo=false"
 # Control+F13="proto:broadcast=switch"
 # Control+F14="proto:ignore_broadcasted_chars=switch"
+# Control+F15="proto:allow_osc52=switch"
 # Shift+Button3="exesel:mlclient -e w3m"
 # Shift+Button3="exesel:\"/cygdrive/c/Program Files/Internet Explorer/iexplore.exe\" \"%s\""
 # Shift+Button3="exesel:/cygdrive/c/Program\\ Files/Internet\\ Explorer/iexplore.exe \"%s\""

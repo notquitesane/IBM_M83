@@ -128,6 +128,8 @@ icon_path = /usr/share/pixmaps/mlterm-icon.svg
 
 # emoji_path =
 
+# emoji_file_format =
+
 # (Available for mlterm-fb, mlterm-wl or mlterm-sdl2)
 # use_aafont = false
 
@@ -211,6 +213,8 @@ scrollbar_view_name = sample
 
 # regard_uri_as_word = false
 
+# resize_mode = wrap
+
 # (none,mod1,mod2,mod3,mod4,meta,alt,super,hyper)
 # mod_meta_key = none
 
@@ -224,8 +228,6 @@ scrollbar_view_name = sample
 
 # (none,blend,genuine)
 # daemon_mode = none
-
-# use_extended_scroll_shortcut = false
 
 # init_str =
 

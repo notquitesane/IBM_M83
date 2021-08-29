@@ -182,6 +182,7 @@ dev-util/android-tools
 dev-util/cligh
 dev-util/howdoi
 dev-util/linklint
+dev-util/systemtap
 dev-vcs/hub
 games-board/xmahjongg
 games-misc/fortune-mod-bofh-excuses
@@ -223,6 +224,7 @@ media-gfx/xli
 media-gfx/xv
 media-sound/alsa-tools
 media-sound/mpd
+media-sound/mpg123
 media-sound/mps-youtube
 media-sound/ncmpcpp
 media-sound/pavucontrol
