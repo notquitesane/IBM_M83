@@ -1,5 +1,5 @@
 # Sagan rsync.rules
-# Copyright (c) 2009-2014, Quadrant Information Security <www.quadrantsec.com>
+# Copyright (c) 2009-2021. Quadrant Information Security <www.quadrantsec.com>
 # All rights reserved.
 #
 # Please submit any custom rules or ideas to sagan-submit@quadrantsec.com or the sagan-sigs mailing list
@@ -25,9 +25,9 @@
 #
 #*************************************************************
 
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] mkdir failure. Permission denied"; program: rsync; content: "mkdir"; content: "Permission denied"; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001050; sid: 5001050; rev: 2;)
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] stat failure. Permission denied"; program: rsync; content: "stat"; content: "Permission denied"; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001051; sid: 5001051; rev: 2;)
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] Inbound rsync connection"; program: rsync; content: "rsync to"; content: "from"; classtype: not-suspicious; reference: url, wiki.quadrantsec.com/bin/view/Main/5001052; sid: 5001052; rev: 2;)
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] Connection closed stats"; program: rsync; content: "sent"; content: "received"; content: "total size"; classtype: not-suspicious; reference: url, wiki.quadrantsec.com/bin/view/Main/5001053; sid: 5001053; rev: 2;)
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] Authentication failure"; program: rsync; content: "auth failed on module"; classtype: attempted-user; reference: url, wiki.quadrantsec.com/bin/view/Main/5001054; sid: 5001054; rev: 2;)
-alert tcp $EXTERNAL_NET any -> $HOME_NET $RSYNC_PORT (msg: "[RSYNC] Some files could not be transferred"; program: rsync; content: "rsync error"; content: "code 23"; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001055; sid: 5001055; rev: 2;)
+#alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] mkdir failure. Permission denied"; program: rsync|rsyncd; content: "mkdir"; content: "Permission denied"; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001050; sid: 5001050; rev:4;)
+#alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] stat failure. Permission denied"; program: rsync|rsyncd; content: "stat"; content: "Permission denied"; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001051; sid: 5001051; rev:4;)
+#alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] Inbound rsync connection"; program: rsync|rsyncd; content: "rsync to"; content: "from"; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: not-suspicious; reference: url, wiki.quadrantsec.com/bin/view/Main/5001052; sid: 5001052; rev:4;)
+#alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] Connection closed stats"; program: rsync|rsyncd; content: "sent"; content: "received"; content: "total size"; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: not-suspicious; reference: url, wiki.quadrantsec.com/bin/view/Main/5001053; sid: 5001053; rev:4;)
+alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] Authentication failure"; program: rsync|rsyncd; content: "auth failed on module"; parse_port; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: attempted-user; reference: url, wiki.quadrantsec.com/bin/view/Main/5001054; sid: 5001054; rev:5;)
+#alert any $EXTERNAL_NET any -> $HOME_NET any (msg: "[RSYNC] Some files could not be transferred"; program: rsync|rsyncd; content: "rsync error"; content: "code 23"; default_proto: tcp; default_dst_port: $RSYNC_PORT; classtype: program-error; reference: url, wiki.quadrantsec.com/bin/view/Main/5001055; sid: 5001055; rev:4;)

@@ -1,4 +1,0 @@
->=sys-process/daemontools-encore-1.11 ~amd64
-=sys-process/itop-0.1 ~amd64
-=sys-process/nq-0.4 ~amd64
-=sys-process/ts-0.5.3 ~amd64
