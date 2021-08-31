@@ -27,17 +27,10 @@ app-admin/verynice
 app-admin/xtail
 app-admin/yadm
 app-arch/advancecomp
-app-arch/dump
 app-arch/p7zip
 app-arch/pxz
 app-arch/unrar
 app-backup/borgbackup
-app-backup/borgweb
-app-backup/luckybackup
-app-backup/rdiff-backup
-app-backup/restic
-app-backup/rsnapshot
-app-backup/simplebackup
 app-benchmarks/bonnie
 app-benchmarks/bonnie++
 app-benchmarks/bootchart2
