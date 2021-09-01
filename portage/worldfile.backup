@@ -3,7 +3,6 @@ app-admin/cpulimit
 app-admin/eclean-kernel
 app-admin/fetchlog
 app-admin/hddtemp
-app-admin/keepassxc
 app-admin/logrotate
 app-admin/logsentry
 app-admin/metalog
@@ -371,9 +370,7 @@ x11-misc/xscreensaver
 x11-misc/xsel
 x11-misc/xsetleds
 x11-misc/xtoolwait
-x11-terms/mlterm
 x11-terms/mrxvt
 x11-terms/root-tail
 x11-terms/rxvt-unicode
 x11-terms/st
-x11-terms/xterm
