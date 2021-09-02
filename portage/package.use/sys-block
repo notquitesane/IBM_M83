@@ -1,2 +1,0 @@
-sys-block/gparted btrfs cryptsetup f2fs fat reiser4 reiserfs xfs
-sys-block/parted device-mapper

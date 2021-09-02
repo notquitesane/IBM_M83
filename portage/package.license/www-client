@@ -1,4 +1,0 @@
->=www-client/google-chrome-87.0.4280.88 google-chrome
->=www-client/opera-73.0.3856.284-r1 OPERA-2018
-# required by speedtest (argument)
->=net-analyzer/speedtest-1.0.0 Ookla

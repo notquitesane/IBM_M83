@@ -1,3 +1,0 @@
-sys-kernel/genkernel-next cryptsetup
-sys-kernel/gentoo-sources -symlink experimental
-sys-kernel/linux-firmware savedconfig

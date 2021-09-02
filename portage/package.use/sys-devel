@@ -1,5 +1,0 @@
-sys-devel/binutils static-libs -gold
-sys-devel/clang llvm_targets_AArch64 llvm_targets_AVR -llvm_targets_AMDGPU -llvm_targets_NVPTX
-sys-devel/gcc doc objc objc-gc graphite objc++ go vtv fortran
->=sys-devel/llvm-10.0.0 llvm_targets_NVPTX llvm_targets_AMDGPU
-sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64 llvm_targets_AVR

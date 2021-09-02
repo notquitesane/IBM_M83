@@ -1,7 +1,0 @@
-=x11-plugins/multiload-ng-1.4.2
-# required by speedtest (argument)
-# /etc/portage/package.mask/all_categories:
-=net-analyzer/speedtest-1.0.0
-# required by sys-apps/systemd-tmpfiles-openrc (argument)
-# /etc/portage/package.mask/all_categories:
-=sys-apps/systemd-tmpfiles-openrc-1
