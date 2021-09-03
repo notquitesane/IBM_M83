@@ -257,10 +257,7 @@ net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/torrentinfo
 net-vpn/openvpn
-sci-calculators/galculator
-sci-calculators/grpn
 sci-calculators/units
-sci-electronics/xcircuit
 sys-apps/bar
 sys-apps/biosdevname
 sys-apps/daemonize
@@ -280,7 +277,6 @@ sys-apps/preload
 sys-apps/progress
 sys-apps/pv
 sys-apps/readahead-list
-sys-apps/tuned
 sys-apps/usbutils
 sys-apps/vbetool
 sys-apps/watchdog
