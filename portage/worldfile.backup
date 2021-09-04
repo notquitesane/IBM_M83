@@ -206,7 +206,6 @@ media-gfx/pngcrush
 media-gfx/pngtools
 media-gfx/qiv
 media-gfx/scrot
-media-gfx/sweethome3d-bin
 media-gfx/sxiv
 media-gfx/termtosvg
 media-gfx/xli
@@ -266,6 +265,7 @@ sys-apps/earlyoom
 sys-apps/etckeeper
 sys-apps/ethtool
 sys-apps/fakechroot
+sys-apps/flatpak
 sys-apps/hdparm
 sys-apps/hwloc
 sys-apps/lm-sensors

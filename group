@@ -105,3 +105,4 @@ openvpn:x:394:
 ultimaker:x:369:
 distcc:x:240:
 beanstalk:x:137:
+flatpak:x:313:
