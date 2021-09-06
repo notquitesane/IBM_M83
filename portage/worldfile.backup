@@ -60,13 +60,11 @@ app-eselect/eselect-timezone
 app-forensics/chkrootkit
 app-forensics/cmospwd
 app-forensics/rkhunter
-app-forensics/unhide
 app-laptop/laptop-mode-tools
 app-misc/actkbd
 app-misc/asciinema
 app-misc/away
 app-misc/boxes
-app-misc/btail
 app-misc/ca-certificates
 app-misc/chkcrontab
 app-misc/color
@@ -89,7 +87,6 @@ app-office/libreoffice
 app-officeext/languagetool
 app-officeext/ooo2gd
 app-portage/cpuid2cpuflags
-app-portage/diffmask
 app-portage/elogv
 app-portage/elogviewer
 app-portage/flaggie
