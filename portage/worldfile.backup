@@ -12,7 +12,6 @@ app-admin/ps_mem
 app-admin/psmon
 app-admin/pwgen
 app-admin/pydf
-app-admin/rcm
 app-admin/restart-services
 app-admin/sagan
 app-admin/sshguard
@@ -34,7 +33,6 @@ app-benchmarks/bonnie
 app-benchmarks/bonnie++
 app-benchmarks/bootchart2
 app-benchmarks/dbench
-app-benchmarks/filebench
 app-benchmarks/i7z
 app-benchmarks/interbench
 app-benchmarks/ioping

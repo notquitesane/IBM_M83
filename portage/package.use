@@ -229,7 +229,7 @@ www-client/elinks bittorrent ftp debug javascript perl ruby
 www-client/palemoon-bin gtk3 startup-notification
 www-client/serpent startup-notification
 www-client/w3m X imlib
-x11-base/xorg-drivers video_cards_fbdev video_cards_vesa
+x11-base/xorg-drivers video_cards_fbdev -video_cards_vesa -input_devices_synaptics -input_devices_wacom video_cards_i915 input_devices_libinput input_devices_evdev video_cards_i965 video_cards_intel
 x11-base/xorg-server xcsecurity xnest suid -elogind
 x11-drivers/xf86-video-intel dri tools uxa xvmc
 x11-libs/cairo X svg opengl
@@ -253,3 +253,4 @@ x11-terms/xterm truetype
 x11-misc/dmenu savedconfig
 sys-process/htop lm-sensors hwloc
 app-misc/tmux utempter
+x11-base/xorg-driver -video_cards_vesa -input_devices_synaptics -input_devices_wacom
