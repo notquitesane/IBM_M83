@@ -3,6 +3,7 @@ app-admin/cpulimit
 app-admin/eclean-kernel
 app-admin/fetchlog
 app-admin/hddtemp
+app-admin/keepass
 app-admin/logrotate
 app-admin/logsentry
 app-admin/metalog

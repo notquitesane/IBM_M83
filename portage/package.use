@@ -183,7 +183,7 @@ sys-apps/man-db berkdb gdbm
 sys-apps/pciutils dns
 sys-apps/portage doc
 sys-apps/shadow skey
-sys-apps/util-linux slang static-libs tty-helpers
+sys-apps/util-linux slang static-libs tty-helpers -udev
 sys-apps/watchdog nfs
 >=sys-auth/pambase-20200304 elogind
 sys-auth/pambase mktemp

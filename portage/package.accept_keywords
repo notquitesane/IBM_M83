@@ -22,3 +22,35 @@
 =x11-misc/xidle-26052015 ~amd64
 # required by xcape (argument)
 =x11-misc/xcape-1.2 ~amd64
+# required by app-backup/borgweb (argument)
+=app-backup/borgweb-0.3.0 ~amd64
+# required by sys-process/daemontools-encore (argument)
+=sys-process/daemontools-encore-1.11 ~amd64
+# required by sys-fs/archivemount (argument)
+=sys-fs/archivemount-0.9.1 ~amd64
+# required by net-irc/irssi-xmpp (argument)
+=net-irc/irssi-xmpp-0.54 ~amd64
+# required by net-mail/renattach (argument)
+=net-mail/renattach-1.2.4-r1 ~amd64
+# required by net-misc/lanmap (argument)
+=net-misc/lanmap-81-r2 ~amd64
+# required by yadm (argument)
+=app-admin/yadm-2.4.0 ~amd64
+# required by qiv (argument)
+=media-gfx/qiv-2.3.2-r1 ~amd64
+# required by ipband (argument)
+=net-analyzer/ipband-0.8.1-r2 ~amd64
+# required by zoom (argument)
+=net-im/zoom-5.7.31792.0820 ~amd64
+# required by bootchart2 (argument)
+=app-benchmarks/bootchart2-0.14.8-r1 ~amd64
+# required by mutt-wizard (argument)
+=mail-client/mutt-wizard-3.2.1-r1 ~amd64
+# required by fim (argument)
+=media-gfx/fim-0.5_rc3 ~amd64
+# required by jpegtoavi (argument)
+=media-gfx/jpegtoavi-1.5 ~amd64
+# required by dopewars (argument)
+=games-strategy/dopewars-1.6.1 ~amd64
+# required by wtf (argument)
+=games-misc/wtf-20210416 ~amd64
