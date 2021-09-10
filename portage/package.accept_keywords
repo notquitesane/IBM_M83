@@ -54,3 +54,7 @@
 =games-strategy/dopewars-1.6.1 ~amd64
 # required by wtf (argument)
 =games-misc/wtf-20210416 ~amd64
+# required by games-misc/funny-manpages (argument)
+=games-misc/funny-manpages-2.3 ~amd64
+# required by games-misc/fortune-mod-taow (argument)
+=games-misc/fortune-mod-taow-1.0 ~amd64
