@@ -23,7 +23,6 @@
 =sys-process/itop-0.1
 =sys-process/nq-0.4
 =sys-process/ts-0.5.3
->=www-client/brave-bin-1.21.73
 =www-client/palemoon-28.11.0
 =www-client/serpent-2020.11.25
 >=www-client/serpent-2021.01.05
@@ -35,3 +34,10 @@
 # required by sys-apps/systemd-tmpfiles-openrc (argument)
 # /etc/portage/package.mask/all_categories:
 =sys-apps/systemd-tmpfiles-openrc-1
+# required by app-shells/zsh-autosuggestions::mv (argument)
+# /etc/portage/package.mask:
+=app-shells/zsh-autosuggestions-0.7.0
+# required by @selected
+# required by @world (argument)
+# /etc/portage/package.mask:
+=www-client/brave-bin-1.29.79

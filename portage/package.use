@@ -32,7 +32,7 @@ app-text/xmlto text
 app-text/xournal pdf
 cross-avr/avr-libc -selinux -libraries multilib
 cross-avr/binutils cxx multilib -gold
-cross-avr/gcc -fortran -go -sanitize -vtv -pie nopie -ssp nossp -selinux -boundschecking -d -gcj -gtk -libffi -mudflap -objc -objc++ -objc-gc multilib
+cross-avr/gcc -fortran -go -sanitize -vtv -pie nopie -ssp nossp -selinux -boundschecking -d -gcj -gtk -libffi -mudflap -objc -objc++ -objc-gc multilib -hardened
 dev-cpp/cairomm X svg
 dev-cpp/gtkmm X
 dev-db/sqlite icu secure-delete tools
@@ -189,7 +189,7 @@ sys-apps/watchdog nfs
 sys-auth/pambase mktemp
 sys-auth/pam_mktemp -prevent-removal
 sys-auth/polkit -gtk elogind
-sys-block/gparted btrfs cryptsetup f2fs fat reiser4 reiserfs xfs
+sys-block/gparted btrfs cryptsetup f2fs fat reiser4 reiserfs xfs policykit
 sys-block/parted device-mapper
 sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes
 sys-cluster/openmpi heterogeneous mpi-threads romio
@@ -199,7 +199,7 @@ sys-devel/gcc doc objc objc-gc graphite objc++ go vtv fortran
 >=sys-devel/llvm-10.0.0 llvm_targets_NVPTX llvm_targets_AMDGPU
 sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64 llvm_targets_AVR
 sys-firmware/ipxe lkrn
-sys-fs/cryptsetup -argon2 -gcrypt -luks1_default -nettle openssl reencrypt static urandom
+sys-fs/cryptsetup argon2 -gcrypt -luks1_default -nettle openssl -reencrypt -static urandom static-libs
 sys-fs/dd-rescue cpu_flags_x86_sse4_2
 sys-fs/eudev static-libs
 sys-fs/lvm2 lvm2create_initrd static static-libs
@@ -254,3 +254,5 @@ x11-misc/dmenu savedconfig
 sys-process/htop lm-sensors hwloc
 app-misc/tmux utempter
 x11-base/xorg-driver -video_cards_vesa -input_devices_synaptics -input_devices_wacom
+media-gfx/gimp xpm vector-icons
+app-mobilephone/heimdall gui
