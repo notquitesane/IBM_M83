@@ -92,3 +92,31 @@
 >=app-vim/languagetool-1.30 ~amd64
 # required by thefuck (argument)
 >=app-shells/thefuck-3.30 ~amd64
+# required by app-shells/fast-syntax-highlighting (argument)
+=app-shells/fast-syntax-highlighting-1.5.5 ~amd64
+# required by gentmaint (argument)
+>=app-portage/gentmaint-0.3.2 ~amd64
+# required by app-shells/set_prompt (argument)
+>=app-shells/set_prompt-3.2 ~amd64
+# required by app-shells/auto-fu-zsh (argument)
+=app-shells/auto-fu-zsh-0.0.1.12_p0 ~amd64
+# required by app-portage/world-mv (argument)
+>=app-portage/world-mv-3.20 ~amd64
+# required by showem (argument)
+>=app-portage/showem-1.0.3 ~amd64
+# required by portconf (argument)
+=app-portage/portconf-1.6.8-r1 ~amd64
+# required by @selected
+# required by @world (argument)
+=app-portage/portconf-1.6.9 ~amd64
+# required by app-portage/logclean::mv (argument)
+>=app-portage/logclean-18.4.1 ~amd64
+# required by golop (argument)
+=app-portage/golop-0.2.1 ~amd64
+# required by dev-qt/qtgui-5.15.2-r2::gentoo
+# required by dev-qt/qtgraphicaleffects-5.15.2-r1::gentoo
+# required by dev-qt/qtquickcontrols2-5.15.2::gentoo
+# required by dev-python/uranium-4.9.1::gentoo
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
