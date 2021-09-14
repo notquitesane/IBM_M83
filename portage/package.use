@@ -171,7 +171,7 @@ sci-electronics/kicad github
 sci-libs/fftw quad
 sci-libs/hdf5 mpi
 sci-misc/boinc X
-sys-apps/busybox math mdev savedconfig -sep-usr 
+sys-apps/busybox math mdev savedconfig -sep-usr -static
 sys-apps/coreutils gmp
 sys-apps/dbus X
 sys-apps/elfix ptpax
@@ -183,7 +183,7 @@ sys-apps/man-db berkdb gdbm
 sys-apps/pciutils dns
 sys-apps/portage doc
 sys-apps/shadow skey
-sys-apps/util-linux slang  tty-helpers -udev
+sys-apps/util-linux slang tty-helpers -udev static-libs
 sys-apps/watchdog nfs
 >=sys-auth/pambase-20200304 elogind
 sys-auth/pambase mktemp
@@ -193,13 +193,13 @@ sys-block/gparted btrfs cryptsetup f2fs fat reiser4 reiserfs xfs policykit
 sys-block/parted device-mapper
 sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes
 sys-cluster/openmpi heterogeneous mpi-threads romio
-sys-devel/binutils  -gold
+sys-devel/binutils -gold static-libs
 sys-devel/clang llvm_targets_AArch64 llvm_targets_AVR -llvm_targets_AMDGPU -llvm_targets_NVPTX
 sys-devel/gcc doc objc objc-gc graphite objc++ go vtv fortran
 >=sys-devel/llvm-10.0.0 llvm_targets_NVPTX llvm_targets_AMDGPU
 sys-devel/llvm libffi -llvm_targets_AMDGPU -llvm_targets_NVPTX llvm_targets_AArch64 llvm_targets_AVR
 sys-firmware/ipxe lkrn
-sys-fs/cryptsetup argon2 -gcrypt -luks1_default -nettle openssl -reencrypt  urandom 
+sys-fs/cryptsetup argon2 -gcrypt -luks1_default -nettle openssl -reencrypt urandom static-libs
 sys-fs/dd-rescue cpu_flags_x86_sse4_2
 sys-fs/eudev 
 sys-fs/lvm2 lvm2create_initrd  
@@ -256,3 +256,5 @@ app-misc/tmux utempter
 x11-base/xorg-driver -video_cards_vesa -input_devices_synaptics -input_devices_wacom
 media-gfx/gimp xpm vector-icons
 app-mobilephone/heimdall gui
+dev-libs/libgpg-error static-libs
+dev-libs/popt static-libs

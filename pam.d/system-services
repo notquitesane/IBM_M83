@@ -5,4 +5,3 @@ session		required	pam_limits.so
 session		required	pam_env.so
 session		optional	pam_mktemp.so
 session		required	pam_unix.so
-session		optional	pam_permit.so
