@@ -5,7 +5,7 @@ app-admin/sudo -skey
 app-admin/sysstat lm-sensors
 app-arch/libarchive expat lzo nettle
 app-arch/p7zip rar
-app-arch/xz-utils 
+app-arch/xz-utils static-libs
 app-backup/dar dar64 gcrypt lzo
 app-crypt/argon2 
 app-crypt/gnupg doc smartcard tools usb wks-server
@@ -202,7 +202,7 @@ sys-firmware/ipxe lkrn
 sys-fs/cryptsetup argon2 -gcrypt -luks1_default -nettle openssl -reencrypt urandom static-libs
 sys-fs/dd-rescue cpu_flags_x86_sse4_2
 sys-fs/eudev 
-sys-fs/lvm2 lvm2create_initrd  
+sys-fs/lvm2 lvm2create_initrd static-libs static -udev
 sys-fs/udisks lvm
 sys-kernel/genkernel-next cryptsetup
 sys-kernel/gentoo-sources -symlink experimental
@@ -223,7 +223,7 @@ sys-process/lsof rpc
 sys-process/procps modern-top
 virtual/ffmpeg X mp3 theora -vaapi -vdpau x264
 virtual/imagemagick-tools jpeg svg png tiff
-virtual/libudev 
+virtual/libudev static-libs
 virtual/mpi cxx
 www-client/elinks bittorrent ftp debug javascript perl ruby
 www-client/palemoon-bin gtk3 startup-notification
@@ -258,3 +258,4 @@ media-gfx/gimp xpm vector-icons
 app-mobilephone/heimdall gui
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
+dev-libs/openssl static-libs
