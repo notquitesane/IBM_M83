@@ -23,7 +23,7 @@ macro index,pager,attach,compose \cb "\
 "call urlview to extract URLs out of a message"
 
 # Show documentation when pressing F1
-macro generic,pager <F1> "<shell-escape> less /usr/share/doc/neomutt-20200626/manual.txt<Enter>" "show NeoMutt documentation"
+macro generic,pager <F1> "<shell-escape> less /usr/share/doc/neomutt-20210205-r1/manual.txt<Enter>" "show NeoMutt documentation"
 
 # show the incoming mailboxes list (just like "neomutt -y") and back when pressing "y"
 macro index y "<change-folder>?" "show incoming mailboxes list"
@@ -94,6 +94,8 @@ attachments   +I text/plain
 ## course.  These are off by default!  The MIME elements contained
 ## within a message/* or multipart/* are still examined, even if the
 ## containers themselves don't qualify.
+## Recursion into multipart/alternatives containers is controlled by the
+## $count_alternatives setting.
 ##
 #attachments  +A message/.* multipart/.*
 #attachments  +I message/.* multipart/.*
@@ -780,6 +782,17 @@ attachments   -I message/external-body
 # information on how to set $compose_format.
 # 
 # 
+# set compose_show_user_headers=yes
+#
+# Name: compose_show_user_headers
+# Type: boolean
+# Default: yes
+# 
+# 
+# When set, Neomutt will display user-defined headers (set via my_hdr
+# or from editing with edit-headers).
+# 
+# 
 # set config_charset=""
 #
 # Name: config_charset
@@ -853,6 +866,35 @@ attachments   -I message/external-body
 # This variable controls whether or not copies of your outgoing messages
 # will be saved for later references.  Also see $record,
 # $save_name, $force_name and "fcc-hook".
+# 
+# 
+# set copy_decode_weed=no
+#
+# Name: copy_decode_weed
+# Type: boolean
+# Default: no
+# 
+# 
+# Controls whether NeoMutt will weed headers when invoking the
+# <decode-copy> or <decode-save> functions.
+# 
+# 
+# set count_alternatives=no
+#
+# Name: count_alternatives
+# Type: boolean
+# Default: no
+# 
+# 
+# When set, Mutt will recurse inside multipart/alternatives while
+# performing attachment searching and counting(see attachments).
+# 
+# Traditionally, multipart/alternative parts have simply represented
+# different encodings of the main content of the email.  Unfortunately,
+# some mail clients have started to place email attachments inside
+# one of alternatives.  Setting this will allow Mutt to find
+# and count matching attachments hidden there, and include them
+# in the index via %X or through ~X pattern matching.
 # 
 # 
 # set crypt_autoencrypt=no
@@ -996,11 +1038,12 @@ attachments   -I message/external-body
 # 
 # 
 # When set, NeoMutt will display protected headers ("Memory Hole") in the pager,
+# When set, NeoMutt will display protected headers in the pager,
 # and will update the index and header cache with revised headers.
 # 
 # Protected headers are stored inside the encrypted or signed part of an
 # an email, to prevent disclosure or tampering.
-# For more information see https://github.com/autocrypt/memoryhole.
+# For more information see https://github.com/autocrypt/protected-headers
 # Currently NeoMutt only supports the Subject header.
 # 
 # Encrypted messages using protected headers often substitute the exposed
@@ -1041,11 +1084,11 @@ attachments   -I message/external-body
 # (Crypto only)
 # 
 # 
-# set crypt_protected_headers_subject="Encrypted subject"
+# set crypt_protected_headers_subject="..."
 #
 # Name: crypt_protected_headers_subject
 # Type: string
-# Default: "Encrypted subject"
+# Default: "..."
 # 
 # 
 # When $crypt_protected_headers_write is set, and the message is marked
@@ -1064,12 +1107,12 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# When set, NeoMutt will generate protected headers ("Memory Hole") for
-# signed and encrypted emails.
+# When set, NeoMutt will generate protected headers for signed and encrypted
+# emails.
 # 
 # Protected headers are stored inside the encrypted or signed part of an
 # an email, to prevent disclosure or tampering.
-# For more information see https://github.com/autocrypt/memoryhole.
+# For more information see https://github.com/autocrypt/protected-headers
 # 
 # Currently NeoMutt only supports the Subject header.
 # (Crypto only)
@@ -1458,16 +1501,6 @@ attachments   -I message/external-body
 # This value is ignored if $use_envelope_from is unset.
 # 
 # 
-# set escape="~"
-#
-# Name: escape
-# Type: string
-# Default: "~"
-# 
-# 
-# Escape character to use for functions in the built-in editor.
-# 
-# 
 # set external_search_command=""
 #
 # Name: external_search_command
@@ -1599,7 +1632,7 @@ attachments   -I message/external-body
 # set folder="~/Mail"
 #
 # Name: folder
-# Type: string
+# Type: mailbox
 # Default: "~/Mail"
 # 
 # 
@@ -1711,10 +1744,10 @@ attachments   -I message/external-body
 # 
 # 
 # When forwarding inline (i.e. $mime_forward unset or
-# answered with ``no'' and $forward_decode set), attachments
+# answered with "no" and $forward_decode set), attachments
 # which cannot be decoded in a reasonable manner will be attached
 # to the newly composed message if this quadoption is set or
-# answered with ``yes''.
+# answered with "yes".
 # 
 # 
 # set forward_attribution_intro="----- Forwarded message from %f -----"
@@ -2213,10 +2246,11 @@ attachments   -I message/external-body
 # Default: 0
 # 
 # 
-# When set to a value greater than 0, new headers will be downloaded
-# in sets of this size.  If you have a very large mailbox, this might
-# prevent a timeout and disconnect when opening the mailbox, by sending
-# a FETCH per set of this size instead of a single FETCH for all new
+# When set to a value greater than 0, new headers will be
+# downloaded in groups of this many headers per request.  If you
+# have a very large mailbox, this might prevent a timeout and
+# disconnect when opening the mailbox, by sending a FETCH per set
+# of this many headers, instead of a single FETCH for all new
 # headers.
 # 
 # 
@@ -2542,7 +2576,7 @@ attachments   -I message/external-body
 # %J      Message tags (if present, tree unfolded, and != parent's tags)
 # %K      The list to which the letter was sent (if any; otherwise: empty)
 # %L      If an address in the "To:" or "Cc:" header field matches an address
-#         Defined by the users "subscribe" command, this displays
+#         Defined by the user's "subscribe" command, this displays
 #         "To <list-name>", otherwise the same as %F
 # %l      number of lines in the unprocessed message (may not work with
 #         maildir, mh, and IMAP folders)
@@ -2580,7 +2614,7 @@ attachments   -I message/external-body
 # %zs     Message status flags
 # %zt     Message tag flags
 # %@name@ insert and evaluate format-string from the matching
-#         ``index-format-hook'' command
+#         "index-format-hook" command
 # %{fmt}  the date and time of the message is converted to sender's
 #         time zone, and "fmt" is expanded by the library function
 #         strftime(3); a leading bang disables locales
@@ -2600,8 +2634,8 @@ attachments   -I message/external-body
 # format can be modified based on how old a message is.  See the section on
 # "Conditional Dates" for an explanation and examples
 # 
-# Note that for mbox/mmdf, ``%l'' applies to the unprocessed message, and
-# for maildir/mh, the value comes from the ``Lines:'' header field when
+# Note that for mbox/mmdf, "%l" applies to the unprocessed message, and
+# for maildir/mh, the value comes from the "Lines:" header field when
 # present (the meaning is normally the same). Thus the value depends on
 # the encodings used in the different parts of the message and has little
 # meaning in practice.
@@ -2615,7 +2649,7 @@ attachments   -I message/external-body
 # rightward text.
 # 
 # Note that these expandos are supported in
-# ``save-hook'', ``fcc-hook'' and ``fcc-save-hook'', too.
+# "save-hook", "fcc-hook" and "fcc-save-hook", too.
 # 
 # 
 # set inews=""
@@ -2727,7 +2761,7 @@ attachments   -I message/external-body
 # 
 # This variable specifies which files to consult when attempting to
 # display MIME bodies not directly supported by NeoMutt.  The default value
-# is generated during startup: see the ``mailcap'' section of the manual.
+# is generated during startup: see the "mailcap" section of the manual.
 # 
 # $mailcap_path is overridden by the environment variable $MAILCAPS.
 # 
@@ -2831,7 +2865,7 @@ attachments   -I message/external-body
 # set mbox="~/mbox"
 #
 # Name: mbox
-# Type: string
+# Type: mailbox
 # Default: "~/mbox"
 # 
 # 
@@ -3116,20 +3150,6 @@ attachments   -I message/external-body
 # 
 # This variable, when set, makes the thread tree narrower, allowing
 # deeper threads to fit on the screen.
-# 
-# 
-# set net_inc=10
-#
-# Name: net_inc
-# Type: number
-# Default: 10
-# 
-# 
-# Operations that expect to transfer a large amount of data over the
-# network will update their progress every $net_inc kilobytes.
-# If set to 0, no progress messages will be displayed.
-# 
-# See also $read_inc, $write_inc and $net_inc.
 # 
 # 
 # set new_mail_command=""
@@ -3507,12 +3527,9 @@ attachments   -I message/external-body
 # folder, will be roughly one third of the way down this mini-index,
 # giving the reader the context of a few messages before and after the
 # message.  This is useful, for example, to determine how many messages
-# remain to be read in the current thread.  One of the lines is reserved
-# for the status bar from the index, so a setting of 6
-# will only show 5 lines of the actual index.  A value of 0 results in
-# no index being shown.  If the number of messages in the current folder
-# is less than $pager_index_lines, then the index will only use as
-# many lines as it needs.
+# remain to be read in the current thread.  A value of 0 results in no index
+# being shown.  If the number of messages in the current folder is less than
+# $pager_index_lines, then the index will only use as many lines as it needs.
 # 
 # 
 # set pager_stop=no
@@ -3525,6 +3542,22 @@ attachments   -I message/external-body
 # When set, the internal-pager will not move to the next message
 # when you are at the end of a message and invoke the <next-page>
 # function.
+# 
+# 
+# set pattern_format="%2n %-15e  %d"
+#
+# Name: pattern_format
+# Type: string
+# Default: "%2n %-15e  %d"
+# 
+# 
+# This variable describes the format of the "pattern completion" menu. The
+# following printf(3)-style sequences are understood:
+# %d      pattern description
+# %e      pattern expression
+# %n      index number
+# 
+# 
 # 
 # 
 # set pgp_auto_decode=no
@@ -3776,10 +3809,23 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# Used in connection with the <pipe-message> command.  When unset,
+# Used in connection with the <pipe-message> function.  When unset,
 # NeoMutt will pipe the messages without any preprocessing. When set, NeoMutt
-# will weed headers and will attempt to decode the messages
-# first.
+# will attempt to decode the messages first.
+# 
+# Also see $pipe_decode_weed, which controls whether headers will
+# be weeded when this is set.
+# 
+# 
+# set pipe_decode_weed=yes
+#
+# Name: pipe_decode_weed
+# Type: boolean
+# Default: yes
+# 
+# 
+# For <pipe-message>, when $pipe_decode is set, this further
+# controls whether NeoMutt will weed headers.
 # 
 # 
 # set pipe_sep="\n"
@@ -4009,7 +4055,7 @@ attachments   -I message/external-body
 # set postponed="~/postponed"
 #
 # Name: postponed
-# Type: string
+# Type: mailbox
 # Default: "~/postponed"
 # 
 # 
@@ -4018,27 +4064,6 @@ attachments   -I message/external-body
 # in the mailbox specified by this variable.
 # 
 # Also see the $postpone variable.
-# 
-# 
-# set preconnect=""
-#
-# Name: preconnect
-# Type: string
-# Default: ""
-# 
-# 
-# If set, a shell command to be executed if NeoMutt fails to establish
-# a connection to the server. This is useful for setting up secure
-# connections, e.g. with ssh(1). If the command returns a  nonzero
-# status, NeoMutt gives up opening the server. Example:
-# set preconnect="ssh -f -q -L 1234:mailhost.net:143 mailhost.net \
-# sleep 20 < /dev/null > /dev/null"
-# 
-# Mailbox "foo" on "mailhost.net" can now be reached
-# as "{localhost:1234}foo".
-# 
-# Note: For this example to work, you must be able to log in to the
-# remote machine without having to enter a password.
 # 
 # 
 # set preferred_languages=""
@@ -4081,13 +4106,27 @@ attachments   -I message/external-body
 # Default: yes
 # 
 # 
-# Used in connection with the <print-message> command.  If this
+# Used in connection with the <print-message> function.  If this
 # option is set, the message is decoded before it is passed to the
 # external command specified by $print_command.  If this option
 # is unset, no processing will be applied to the message when
 # printing it.  The latter setting may be useful if you are using
 # some advanced printer filter which is able to properly format
 # e-mail messages for printing.
+# 
+# Also see $print_decode_weed, which controls whether headers will
+# be weeded when this is set.
+# 
+# 
+# set print_decode_weed=yes
+#
+# Name: print_decode_weed
+# Type: boolean
+# Default: yes
+# 
+# 
+# For <print-message>, when $print_decode is set, this
+# further controls whether NeoMutt will weed headers.
 # 
 # 
 # set print_split=no
@@ -4097,7 +4136,7 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# Used in connection with the <print-message> command.  If this option
+# Used in connection with the <print-message> function.  If this option
 # is set, the command specified by $print_command is executed once for
 # each message which is to be printed.  If this option is unset,
 # the command specified by $print_command is executed only once, and
@@ -4194,18 +4233,6 @@ attachments   -I message/external-body
 # Match detection may be overridden by the $smileys regular expression.
 # 
 # 
-# set toggle_quoted_show_levels=0
-#
-# Name: toggle_quoted_show_levels
-# Type: number
-# Default: 0
-# 
-# 
-# Quoted text may be filtered out using the <toggle-quoted> command.
-# If set to a number greater than 0, then the <toggle-quoted>
-# command will only filter out quote levels above this number.
-# 
-# 
 # set read_inc=10
 #
 # Name: read_inc
@@ -4271,7 +4298,7 @@ attachments   -I message/external-body
 # set record="~/sent"
 #
 # Name: record
-# Type: string
+# Type: mailbox
 # Default: "~/sent"
 # 
 # 
@@ -4506,13 +4533,14 @@ attachments   -I message/external-body
 # parameters. You want to set this variable when NeoMutt suggests you
 # to save attachments to files named like:
 # =?iso-8859-1?Q?file=5F=E4=5F991116=2Ezip?=
+# =?utf-8?Q?z=C4=99ta.png?=
 # 
 # When this variable is set interactively, the change won't be
 # active until you change folders.
 # 
 # Note that this use of RFC2047's encoding is explicitly
 # prohibited by the standard, but nevertheless encountered in the
-# wild.
+# wild and produced by, e.g., Outlook.
 # 
 # Also note that setting this parameter will not have the effect
 # that NeoMutt generates this kind of encoding.  Instead, NeoMutt will
@@ -4810,11 +4838,11 @@ attachments   -I message/external-body
 # See also: $sidebar_short_path, $sidebar_indent_string, $sidebar_delim_chars.
 # 
 # 
-# set sidebar_format="%B%*  %n"
+# set sidebar_format="%D%*  %n"
 #
 # Name: sidebar_format
 # Type: string
-# Default: "%B%*  %n"
+# Default: "%D%*  %n"
 # 
 # 
 # This variable allows you to customize the sidebar display. This string is
@@ -4939,20 +4967,20 @@ attachments   -I message/external-body
 # Default: order
 # 
 # 
-# Specifies how to sort entries in the file browser.  By default, the
+# Specifies how to sort mailbox entries in the sidebar.  By default, the
 # entries are sorted alphabetically.  Valid values:
-# - alpha (alphabetically)
+# - path (alphabetically)
 # - count (all message count)
 # - flagged (flagged message count)
-# - name (alphabetically)
 # - new (unread message count)
-# - path (alphabetically)
 # - unread (unread message count)
 # - unsorted
 # 
 # 
 # You may optionally use the "reverse-" prefix to specify reverse sorting
-# order (example: "set sort_browser=reverse-date").
+# order (example: "set sidebar_sort_method=reverse-alpha").
+# 
+# The "alpha" and "name" values are synonyms for "path".
 # 
 # 
 # set sidebar_visible=no
@@ -5257,18 +5285,6 @@ attachments   -I message/external-body
 # if you are the only one who can read the file.
 # 
 # 
-# set smtp_user=""
-#
-# Name: smtp_user
-# Type: string
-# Default: ""
-# 
-# 
-# The username for the SMTP server.
-# 
-# This variable defaults to your user name on the local machine.
-# 
-# 
 # set smtp_url=""
 #
 # Name: smtp_url
@@ -5287,6 +5303,18 @@ attachments   -I message/external-body
 # Also see $write_bcc.
 # 
 # 
+# set smtp_user=""
+#
+# Name: smtp_user
+# Type: string
+# Default: ""
+# 
+# 
+# The username for the SMTP server.
+# 
+# This variable defaults to your user name on the local machine.
+# 
+# 
 # set sort=date
 #
 # Name: sort
@@ -5296,20 +5324,23 @@ attachments   -I message/external-body
 # 
 # Specifies how to sort messages in the "index" menu.  Valid values
 # are:
-# - date or date-sent
+# - date
 # - date-received
 # - from
-# - mailbox-order (unsorted)
 # - score
 # - size
 # - spam
 # - subject
 # - threads
 # - to
+# - unsorted
 # 
 # 
 # You may optionally use the "reverse-" prefix to specify reverse sorting
 # order.
+# 
+# The "date-sent" value is a synonym for "date". The "mailbox-order" value is
+# a synonym for "unsorted".
 # 
 # Example:
 # set sort=reverse-date-sent
@@ -5329,6 +5360,10 @@ attachments   -I message/external-body
 # - unsorted (leave in order specified in .neomuttrc)
 # 
 # 
+# Note: This also affects the entries of the address query menu, thus
+# potentially overruling the order of entries as generated by $query_command.
+# 
+# 
 # set sort_aux=date
 #
 # Name: sort_aux
@@ -5342,7 +5377,7 @@ attachments   -I message/external-body
 # When sorting by threads, this variable controls how threads are sorted
 # in relation to other threads, and how the branches of the thread trees
 # are sorted.  This can be set to any value that $sort can, except
-# "threads" (in that case, NeoMutt will just use "date-sent").  You can also
+# "threads" (in that case, NeoMutt will just use "date").  You can also
 # specify the "last-" prefix in addition to the "reverse-" prefix, but "last-"
 # must come after "reverse-".  The "last-" prefix causes messages to be
 # sorted against its siblings by which has the last descendant, using
@@ -5379,6 +5414,8 @@ attachments   -I message/external-body
 # You may optionally use the "reverse-" prefix to specify reverse sorting
 # order (example: "set sort_browser=reverse-date").
 # 
+# The "unread" value is a synonym for "new".
+# 
 # 
 # set sort_re=yes
 #
@@ -5387,13 +5424,14 @@ attachments   -I message/external-body
 # Default: yes
 # 
 # 
-# This variable is only useful when sorting by mailboxes in sidebar. By default,
-# entries are unsorted.  Valid values:
-# - count (all message count)
-# - desc  (virtual mailbox description)
-# - new (new message count)
-# - path
-# - unsorted
+# This variable is only useful when sorting by threads with
+# $strict_threads unset.  In that case, it changes the heuristic
+# mutt uses to thread messages by subject.  With $sort_re set, mutt will
+# only attach a message as the child of another message by subject if
+# the subject of the child message starts with a substring matching the
+# setting of $reply_regex.  With $sort_re unset, mutt will attach
+# the message whether or not this is the case, as long as the
+# non-$reply_regex parts of both messages are identical.
 # 
 # 
 # set spam_separator=","
@@ -5413,7 +5451,7 @@ attachments   -I message/external-body
 # set spoolfile=""
 #
 # Name: spoolfile
-# Type: string
+# Type: mailbox
 # Default: ""
 # 
 # 
@@ -5880,10 +5918,22 @@ attachments   -I message/external-body
 # 7       R Your address appears in the "Reply-To:" header field but none of the above applies.
 # 
 # 
+# set toggle_quoted_show_levels=0
+#
+# Name: toggle_quoted_show_levels
+# Type: number
+# Default: 0
+# 
+# 
+# Quoted text may be filtered out using the <toggle-quoted> command.
+# If set to a number greater than 0, then the <toggle-quoted>
+# command will only filter out quote levels above this number.
+# 
+# 
 # set trash=""
 #
 # Name: trash
-# Type: string
+# Type: mailbox
 # Default: ""
 # 
 # 
@@ -5928,45 +5978,6 @@ attachments   -I message/external-body
 # Controls the format of the terminal status line (or window title),
 # provided that "$ts_enabled" has been set. This string is identical in
 # formatting to the one used by "$status_format".
-# 
-# 
-# set tunnel=""
-#
-# Name: tunnel
-# Type: command
-# Default: ""
-# 
-# 
-# Setting this variable will cause NeoMutt to open a pipe to a command
-# instead of a raw socket. You may be able to use this to set up
-# preauthenticated connections to your IMAP/POP3/SMTP server. Example:
-# set tunnel="ssh -q mailhost.net /usr/local/libexec/imapd"
-# 
-# Note: For this example to work you must be able to log in to the remote
-# machine without having to enter a password.
-# 
-# When set, NeoMutt uses the tunnel for all remote connections.
-# Please see "account-hook" in the manual for how to use different
-# tunnel commands per connection.
-# 
-# 
-# set tunnel_is_secure=yes
-#
-# Name: tunnel_is_secure
-# Type: boolean
-# Default: yes
-# 
-# 
-# When set, NeoMutt will assume the $tunnel connection does not need
-# STARTTLS to be enabled.  It will also allow IMAP PREAUTH server
-# responses inside a tunnel to proceed.  This is appropriate if $tunnel
-# uses ssh or directly invokes the server locally.
-# 
-# When unset, NeoMutt will negotiate STARTTLS according to the
-# ssl_starttls and ssl_force_tls variables.  If ssl_force_tls is
-# set, NeoMutt will abort connecting if an IMAP server responds with PREAUTH.
-# This setting is appropriate if $tunnel does not provide security and
-# could be tampered with by attackers.
 # 
 # 
 # set uncollapse_jump=no
@@ -6142,7 +6153,9 @@ attachments   -I message/external-body
 # 
 # 
 # When set, NeoMutt will weed headers when displaying, forwarding,
-# printing, or replying to messages.
+# or replying to messages.
+# 
+# Also see $copy_decode_weed, $pipe_decode_weed, $print_decode_weed.
 # 
 # 
 # set wrap=0
@@ -6196,18 +6209,18 @@ attachments   -I message/external-body
 # Default: no
 # 
 # 
-# Controls whether mutt writes out the ``Bcc:'' header when
+# Controls whether NeoMutt writes out the "Bcc:" header when
 # preparing messages to be sent.  Some MTAs, such as Exim and
-# Courier, do not strip the ``Bcc:'' header; so it is advisable to
+# Courier, do not strip the "Bcc:" header; so it is advisable to
 # leave this unset unless you have a particular need for the header
 # to be in the sent message.
 # 
-# If mutt is set to deliver directly via SMTP(see $smtp_url),
-# this option does nothing: mutt will never write out the ``Bcc:''
+# If NeoMutt is set to deliver directly via SMTP(see $smtp_url),
+# this option does nothing: NeoMutt will never write out the "Bcc:"
 # header in this case.
 # 
 # Note this option only affects the sending of messages.  Fcc'ed
-# copies of a message will always contain the ``Bcc:'' header if
+# copies of a message will always contain the "Bcc:" header if
 # one exists.
 # 
 # 

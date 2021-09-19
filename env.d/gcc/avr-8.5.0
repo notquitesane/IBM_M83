@@ -1,8 +1,0 @@
-GCC_PATH="/usr/x86_64-pc-linux-gnu/avr/gcc-bin/8.5.0"
-LDPATH="/usr/lib/gcc/avr/8.5.0"
-MANPATH="/usr/share/gcc-data/avr/8.5.0/man"
-INFOPATH="/usr/share/gcc-data/avr/8.5.0/info"
-STDCXX_INCDIR="g++-v8"
-CTARGET="avr"
-GCC_SPECS=""
-MULTIOSDIRS="."

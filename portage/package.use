@@ -7,7 +7,7 @@ app-arch/libarchive expat lzo nettle
 app-arch/p7zip rar
 app-arch/xz-utils static-libs
 app-backup/dar dar64 gcrypt lzo
-app-crypt/argon2 
+app-crypt/argon2 static-libs
 app-crypt/gnupg doc smartcard tools usb wks-server
 app-crypt/p11-kit libffi
 app-emulation/docker aufs
@@ -64,7 +64,7 @@ dev-libs/boost icu context
 dev-libs/cyrus-sasl berkdb gdbm -ssl
 dev-libs/elfutils utils
 dev-libs/gmp 
-dev-libs/json-c 
+dev-libs/json-c static-libs
 dev-libs/libaio 
 >=dev-libs/libdbusmenu-16.04.0-r1 gtk3
 dev-libs/libffi pax-kernel

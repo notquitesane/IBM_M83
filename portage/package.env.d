@@ -6,3 +6,4 @@ dev-lang/ghc large-tmpdir
 irc/irssi compiler-clang-fno-lto
 sys-fs/e2fsprogs native.conf
 dev-util/android-tools native.conf
+app-admin/keepass native.conf
