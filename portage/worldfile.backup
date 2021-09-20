@@ -30,7 +30,6 @@ app-arch/pxz
 app-arch/unrar
 app-backup/borgbackup
 app-benchmarks/bonnie
-app-benchmarks/bonnie++
 app-benchmarks/bootchart2
 app-benchmarks/dbench
 app-benchmarks/i7z
@@ -58,7 +57,6 @@ app-eselect/eselect-timezone
 app-forensics/chkrootkit
 app-forensics/cmospwd
 app-forensics/rkhunter
-app-laptop/laptop-mode-tools
 app-misc/actkbd
 app-misc/asciinema
 app-misc/away
@@ -183,7 +181,6 @@ mail-client/mutt-wizard
 mail-client/neomutt
 mail-filter/bmf
 mail-filter/bogofilter
-mail-filter/mailfilter
 mail-mta/msmtp
 media-fonts/croscorefonts
 media-fonts/terminus-font
