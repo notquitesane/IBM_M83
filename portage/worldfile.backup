@@ -106,7 +106,6 @@ app-shells/thefuck
 app-shells/zsh-autosuggestions
 app-shells/zsh-completions
 app-shells/zsh-syntax-highlighting
-app-text/fbreader
 app-text/html2text
 app-text/qpdf
 app-text/wgetpaste

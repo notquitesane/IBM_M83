@@ -118,3 +118,7 @@
 # required by media-gfx/cura-4.9.1::gentoo
 # required by @selected
 # required by @world (argument)
+# required by btop (argument)
+=sys-process/btop-1.0.2 ~amd64
+# required by usbtop (argument)
+=sys-process/usbtop-1.0 ~amd64

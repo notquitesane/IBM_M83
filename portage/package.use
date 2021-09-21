@@ -164,7 +164,7 @@ net-p2p/rtorrent xmlrpc
 net-print/cups -acl -dbus -usb
 net-print/cups-filters -dbus foomatic pdf
 net-proxy/squid logrotate qos sasl
-net-vpn/openvpn eamples
+net-vpn/openvpn eamples examples
 net-wireless/bluez experimental
 net-wireless/wpa_supplicant ap wps
 sci-electronics/kicad github
@@ -259,3 +259,4 @@ app-mobilephone/heimdall gui
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
 dev-libs/openssl static-libs
+media-libs/libheif x265

@@ -50,3 +50,6 @@
 # required by @world (argument)
 # /etc/portage/package.mask:
 =virtual/libudev-9999
+# required by btop (argument)
+# /etc/portage/package.mask:
+=sys-process/btop-1.0.2
