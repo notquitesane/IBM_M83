@@ -17,7 +17,7 @@ app-misc/mc X -slang
 app-misc/powerline tmux extra vim rc man
 app-office/gnucash ofx
 app-office/libreoffice-bin java
-app-office/libreoffice java googledrive pdfimport gstreamer clang
+app-office/libreoffice java googledrive pdfimport gstreamer -clang
 app-portage/eix doc sqlite nls
 app-portage/layman mercurial sqlite squashfs sync-plugin-portage gpg
 app-shells/bash net

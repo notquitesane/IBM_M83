@@ -40,7 +40,7 @@
 # required by @selected
 # required by @world (argument)
 # /etc/portage/package.mask:
-=www-client/brave-bin-1.29.79
+www-client/brave-bin::brave-overlay
 # required by dev-qt/qtgui-5.15.2-r2::gentoo
 # required by dev-qt/qtgraphicaleffects-5.15.2-r1::gentoo
 # required by dev-qt/qtquickcontrols2-5.15.2::gentoo
