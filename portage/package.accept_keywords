@@ -122,3 +122,33 @@
 =sys-process/btop-1.0.2 ~amd64
 # required by usbtop (argument)
 =sys-process/usbtop-1.0 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo[-minimal]
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-templates-5.1.10 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-5.1.10-r1 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-symbols-5.1.10 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-footprints-5.1.10 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo[-minimal]
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-packages3d-5.1.10 ~amd64
+# required by sci-electronics/kicad-meta-5.1.10::gentoo[nls]
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-i18n-5.1.10 ~amd64
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/kicad-meta-5.1.10 ~amd64
+# required by sci-electronics/kicad-5.1.10-r1::gentoo[oce]
+# required by sci-electronics/kicad-symbols-5.1.10::gentoo
+# required by sci-electronics/kicad-meta-5.1.10::gentoo
+# required by sci-electronics/kicad-meta (argument)
+=sci-libs/oce-0.18.3-r2 ~amd64
+# required by sci-electronics/kicad-5.1.10-r1::gentoo[ngspice]
+# required by sci-electronics/kicad-symbols-5.1.10::gentoo
+# required by sci-electronics/kicad-meta-5.1.10::gentoo
+# required by sci-electronics/kicad-meta (argument)
+=sci-electronics/ngspice-35 ~amd64
