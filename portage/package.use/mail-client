@@ -1,0 +1,2 @@
+mail-client/mutt berkdb gdbm gpgme
+mail-client/neomutt gpgme notmuch slang sasl

@@ -1,0 +1,16 @@
+dev-libs/boost icu context
+dev-libs/cyrus-sasl berkdb gdbm -ssl
+dev-libs/elfutils utils
+dev-libs/json-c static-libs
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
+dev-libs/libffi pax-kernel
+dev-libs/libgpg-error static-libs
+>=dev-libs/libpcre2-10.35 pcre16
+dev-libs/libpcre2 jit pcre16 pcre32
+dev-libs/libpcre jit pcre16 pcre32
+dev-libs/libxml2 icu
+dev-libs/nettle cpu_flags_x86_aes
+dev-libs/openssl static-libs
+dev-libs/popt static-libs
+dev-libs/xmlrpc-c curl
+dev-libs/xmlsec nss

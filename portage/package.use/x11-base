@@ -1,0 +1,3 @@
+x11-base/xorg-drivers video_cards_fbdev -video_cards_vesa -input_devices_synaptics -input_devices_wacom video_cards_i915 input_devices_libinput input_devices_evdev video_cards_i965 video_cards_intel
+x11-base/xorg-driver -video_cards_vesa -input_devices_synaptics -input_devices_wacom
+x11-base/xorg-server xcsecurity xnest suid -elogind

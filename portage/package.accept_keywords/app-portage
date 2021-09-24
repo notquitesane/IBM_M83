@@ -1,0 +1,8 @@
+>=app-portage/gentmaint-0.3.2 ~amd64
+=app-portage/golop-0.2.1 ~amd64
+>=app-portage/logclean-18.4.1 ~amd64
+>=app-portage/portage-bashrc-mv-20.4 ~amd64
+=app-portage/portconf-1.6.8-r1 ~amd64
+=app-portage/portconf-1.6.9 ~amd64
+>=app-portage/showem-1.0.3 ~amd64
+>=app-portage/world-mv-3.20 ~amd64
