@@ -302,6 +302,7 @@ sys-power/pmtools
 sys-power/powertop
 sys-power/thermald
 sys-process/at
+sys-process/bpytop::gentoo
 sys-process/daemontools-encore
 sys-process/dcron
 sys-process/htop
