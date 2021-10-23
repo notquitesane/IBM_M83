@@ -262,6 +262,7 @@ sys-apps/hdparm
 sys-apps/hwloc
 sys-apps/lm-sensors
 sys-apps/lshw
+sys-apps/mlocate
 sys-apps/moreutils
 sys-apps/netplug
 sys-apps/pciutils
