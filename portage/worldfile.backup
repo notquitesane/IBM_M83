@@ -319,7 +319,6 @@ sys-process/watchpid
 virtual/libelf
 www-client/brave-bin
 www-client/elinks
-www-client/google-chrome
 www-client/opera
 www-misc/monitorix
 www-misc/profile-sync-daemon::gentoo
