@@ -22,9 +22,9 @@ media-libs/libvpx cpu_flags_x86_sse4_1 postproc svc
 media-libs/mesa gles1 gles2 -vaapi -vdpau X
 media-libs/netpbm X jbig jpeg png tiff
 media-libs/openal alsa cpu_flags_x86_sse4_1
-media-libs/opencv openexr
+media-libs/opencv openexr contribdnn contrib
 media-libs/phonon -vlc
 media-libs/sdl-image jpeg png
 media-libs/sdl-mixer flac mp3 smpeg vorbis
 media-libs/tiff jbig jpeg
-media-libs/vigra jpeg png tiff openexr
+media-libs/vigra jpeg png tiff openexr mpi
