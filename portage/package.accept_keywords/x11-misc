@@ -3,3 +3,5 @@
 >=x11-misc/xidle-26052015 ~amd64
 # required by =sys-process/bpytop-1.0.67::gentoo (argument)
 =sys-process/bpytop-1.0.67 ~amd64
+# required by net-im/discord-bin (argument)
+=net-im/discord-bin-0.0.16-r1 ~amd64

@@ -1,2 +1,2 @@
 sci-libs/fftw quad
-sci-libs/hdf5 mpi -hl
+sci-libs/hdf5 -mpi -hl unsupported

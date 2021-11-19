@@ -1,4 +1,4 @@
 virtual/ffmpeg X mp3 theora -vaapi -vdpau x264
 virtual/imagemagick-tools jpeg svg png tiff
 virtual/libudev static-libs
-virtual/mpi cxx
+virtual/mpi cxx romio

@@ -27,4 +27,4 @@ media-libs/phonon -vlc
 media-libs/sdl-image jpeg png
 media-libs/sdl-mixer flac mp3 smpeg vorbis
 media-libs/tiff jbig jpeg
-media-libs/vigra jpeg png tiff openexr mpi
+media-libs/vigra jpeg png tiff openexr -mpi hdf5
