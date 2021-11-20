@@ -41,6 +41,7 @@ app-benchmarks/pipebench
 app-benchmarks/ramspeed
 app-benchmarks/stress
 app-benchmarks/tiobench
+app-cdr/ccd2iso
 app-cdr/cdrtools
 app-crypt/gentoo-keys
 app-crypt/gpa
