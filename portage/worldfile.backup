@@ -228,6 +228,7 @@ net-dns/dnsmasq
 net-fs/nfs-utils
 net-fs/sshfs
 net-ftp/gftp
+net-im/discord-bin
 net-im/zoom
 net-irc/irssi
 net-irc/irssi-xmpp
@@ -242,6 +243,7 @@ net-misc/keychain
 net-misc/lanmap
 net-misc/netifrc
 net-misc/ntp
+net-misc/sb-hosts
 net-misc/sshrc
 net-misc/throttle
 net-misc/youtube-dl
