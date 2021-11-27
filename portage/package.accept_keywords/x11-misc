@@ -5,3 +5,40 @@
 =sys-process/bpytop-1.0.67 ~amd64
 # required by net-im/discord-bin (argument)
 =net-im/discord-bin-0.0.16-r1 ~amd64
+# required by dev-python/pynest2d-4.9.1::gentoo
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/libnest2d-0.4-r2 ~amd64
+# required by media-gfx/curaengine-4.9.1::gentoo
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/stb-20200713 ~amd64
+# required by dev-libs/libnest2d-0.4-r2::gentoo
+# required by dev-python/pynest2d-4.9.1::gentoo
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/clipper-6.4.2 ~amd64
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/libsavitar-4.9.1 ~amd64
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=media-gfx/curaengine-4.9.1 ~amd64
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/libcharon-4.9.1-r1 ~amd64
+# required by dev-python/uranium-4.9.1::gentoo[-test]
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/libarcus-4.9.1 ~amd64
+# required by media-gfx/cura-4.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-python/pynest2d-4.9.1 ~amd64
