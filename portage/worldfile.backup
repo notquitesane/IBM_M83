@@ -52,6 +52,7 @@ app-crypt/tpm-tools
 app-doc/eclass-manpages
 app-doc/jargon
 app-doc/vilearn
+app-emulation/virtualbox
 app-emulation/x48
 app-eselect/eselect-sh
 app-eselect/eselect-timezone

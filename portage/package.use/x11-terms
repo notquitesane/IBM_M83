@@ -9,3 +9,4 @@ sys-kernel/mkinitramfs-ll reiserfs f2fs zsh dm-crypt device-mapper
 kde-apps/ktouch X
 media-libs/qhull static-libs
 media-gfx/prusaslicer gui
+app-emulation/virtualbox -pulseaudio
