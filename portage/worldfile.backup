@@ -10,7 +10,6 @@ app-admin/metalog
 app-admin/pprocm
 app-admin/procinfo-ng
 app-admin/ps_mem
-app-admin/psmon
 app-admin/pwgen
 app-admin/pydf
 app-admin/restart-services
@@ -158,8 +157,6 @@ app-vim/vimbuddy
 app-vim/voom
 cross-avr/avr-libc
 cross-avr/binutils
-cross-avr/gcc
-dev-embedded/arduino
 dev-python/html2text
 dev-python/netifaces
 dev-util/android-tools
@@ -261,7 +258,6 @@ sys-apps/earlyoom
 sys-apps/etckeeper
 sys-apps/ethtool
 sys-apps/fakechroot
-sys-apps/flatpak
 sys-apps/hdparm
 sys-apps/hwloc
 sys-apps/lm-sensors

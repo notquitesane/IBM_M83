@@ -10,3 +10,5 @@ kde-apps/ktouch X
 media-libs/qhull static-libs
 media-gfx/prusaslicer gui
 app-emulation/virtualbox -pulseaudio
+app-admin/sagan smtp
+dev-lang/spidermonkey clang
