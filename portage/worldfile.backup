@@ -279,6 +279,7 @@ sys-block/di
 sys-block/f3
 sys-block/gparted
 sys-block/io-scheduler-udev-rules
+sys-boot/etcher
 sys-boot/grub
 sys-devel/crossdev
 sys-devel/distcc

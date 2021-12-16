@@ -2,3 +2,5 @@
 >=www-client/opera-73.0.3856.284-r1 OPERA-2018
 # required by net-im/discord-bin (argument)
 >=net-im/discord-bin-0.0.16-r1 all-rights-reserved
+# required by =sys-boot/etcher-1.5.115::ROKO__ (argument)
+>=sys-boot/etcher-1.5.115 GPL2
