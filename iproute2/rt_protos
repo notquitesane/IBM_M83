@@ -14,10 +14,8 @@
 13	dnrouted
 14	xorp
 15	ntk
-16	dhcp
-18	keepalived
+16      dhcp
 42	babel
-99	openr
 186	bgp
 187	isis
 188	ospf
