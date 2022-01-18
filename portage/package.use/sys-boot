@@ -1,1 +1,1 @@
-sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes
+sys-boot/grub device-mapper efiemu mount -truetype -fonts -themes grub_platforms_efi-64

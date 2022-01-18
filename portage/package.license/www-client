@@ -6,3 +6,8 @@
 >=sys-boot/etcher-1.5.115 GPL2
 # required by media-libs/fdk-aac (argument)
 >=media-libs/fdk-aac-2.0.0 FraunhoferFDK
+# required by app-emulation/virtualbox (argument)
+>=app-emulation/virtualbox-6.1.30.148432 PUEL
+# required by app-emulation/virtualbox-6.1.30.148432::core-kit
+# required by app-emulation/virtualbox (argument)
+>=app-emulation/virtualbox-bin-6.1.30.148432 PUEL

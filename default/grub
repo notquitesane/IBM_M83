@@ -1,9 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 #
 # To populate all changes in this file you need to regenerate your
 # grub configuration file afterwards:
-#     'grub2-mkconfig -o /boot/grub/grub.cfg'
+#     'grub-mkconfig -o /boot/grub/grub.cfg'
 #
 # See the grub info page for documentation on possible variables and
 # their associated values.
@@ -11,11 +11,11 @@
 GRUB_DISTRIBUTOR="Gentoo"
 
 # Default menu entry
-GRUB_DEFAULT=0
+#GRUB_DEFAULT=0
 
 # Boot the default entry this many seconds after the menu is displayed
-GRUB_TIMEOUT=5
-GRUB_TIMEOUT_STYLE=menu
+#GRUB_TIMEOUT=5
+#GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
 #GRUB_CMDLINE_LINUX=""
@@ -23,16 +23,16 @@ GRUB_TIMEOUT_STYLE=menu
 # Examples:
 #
 # Boot with network interface renaming disabled
+# GRUB_CMDLINE_LINUX="net.ifnames=0"
 #
 # Boot with systemd instead of sysvinit (openrc)
 # GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
 
 # Append parameters to the linux kernel command line for non-recovery entries
-
-#GRUB_CMDLINE_LINUX_DEFAULT="dolvm crypt_root=UUID=d040626a-174d-46e2-9469-b7ad49c6f642 root=/dev/mapper/lvm-root"
+#GRUB_CMDLINE_LINUX_DEFAULT=""
 
 # Uncomment to disable graphical terminal (grub-pc only)
-GRUB_TERMINAL=console
+#GRUB_TERMINAL=console
 
 # The resolution used on graphical terminal.
 # Note that you can use only modes which your graphic card supports via VBE.
@@ -44,7 +44,7 @@ GRUB_TERMINAL=console
 # 'GRUB_GFXMODE', 'WIDTHxHEIGHT'['xDEPTH'] to set a particular
 # graphics mode, or a sequence of these separated by commas or
 # semicolons to try several modes in sequence.
-GRUB_GFXPAYLOAD_LINUX=text
+#GRUB_GFXPAYLOAD_LINUX=
 
 # Path to theme spec txt file.
 # The starfield is by default provided with use truetype.
@@ -63,25 +63,11 @@ GRUB_GFXPAYLOAD_LINUX=text
 
 # Uncomment to disable generation of the submenu and put all choices on
 # the top-level menu.
-# Besides the visual affect of no sub menu
+# Besides the visual affect of no sub menu, this makes navigation of the
 # menu easier for a user who can't see the screen.
 #GRUB_DISABLE_SUBMENU=y
 
 # Uncomment to play a tone when the main menu is displayed.
 # This is useful, for example, to allow users who can't see the screen
 # to know when they can make a choice on the menu.
-GRUB_INIT_TUNE="60 800 1"
-
-# add this
-
-#dracut
-GRUB_CMDLINE_LINUX_DEFAULT="net.ifnames=0 rootfstype=f2fs docrypt i915.modeset=1 udev dolvm root=UUID=94df512c-4ec4-4de2-bfc8-221b599154d2 rd.luks.UUID=b1949190-e9cc-4c91-a107-4146649ebd3a rd.lvm.vg=lvm rd.lvm.lv=lvm/root rd.lvm.lv=lvm/swap rd.lvm.lv=lvm/usr resume=/dev/mapper/lvm-swap rootflags=rw,relatime root_trim=yes rd.auto"
-
-#Uncomment for debugging
-
-#GRUB_CMDLINE_LINUX_DEFAULT="rd.shell rd.debug log_buf_len=1M rd.break"
-
-#genkernel
-#GRUB_CMDLINE_LINUX_DEFAULT="i915.modeset=1 udev docrypt dolvm net.ifnames=0 rootfstype=f2fs docrypt i915.modeset=1 rootflags=rw,relatime,data=ordered root_trim=yes crypt_root=UUID=FC772BD4-C163-456A-9184-8E9BD0CA5B2E root=UUID=ECD292AF-DA0D-4CBF-8E3E-C81858D3D688 dosshd"
-
-GRUB_PRELOAD_MODULES="lvm crypto ext2 luks"
+#GRUB_INIT_TUNE="60 800 1"

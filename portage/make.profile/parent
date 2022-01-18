@@ -1,7 +1,10 @@
 core-kit:funtoo/1.0/linux-gnu/arch/x86-64bit
 core-kit:funtoo/1.0/linux-gnu/arch/x86-64bit/subarch/intel64-haswell
 core-kit:funtoo/1.0/linux-gnu/build/current
-core-kit:funtoo/1.0/linux-gnu/flavor/core
+core-kit:funtoo/1.0/linux-gnu/flavor/hardened
+core-kit:funtoo/1.0/linux-gnu/mix-ins/encrypted-root
+core-kit:funtoo/1.0/linux-gnu/mix-ins/gfxcard-intel
+core-kit:funtoo/1.0/linux-gnu/mix-ins/no-systemd
 browser-kit:funtoo/kits/python-kit/3.7-release
 core-gl-kit:funtoo/kits/python-kit/3.7-release
 core-hw-kit:funtoo/kits/python-kit/3.7-release
@@ -14,7 +17,6 @@ games-kit:funtoo/kits/python-kit/3.7-release
 gnome-kit:funtoo/kits/python-kit/3.7-release
 haskell-kit:funtoo/kits/python-kit/3.7-release
 java-kit:funtoo/kits/python-kit/3.7-release
-kde-kit:funtoo/kits/python-kit/3.7-release
 lang-kit:funtoo/kits/python-kit/3.7-release
 lisp-scheme-kit:funtoo/kits/python-kit/3.7-release
 llvm-kit:funtoo/kits/python-kit/3.7-release
@@ -28,6 +30,7 @@ python-kit:funtoo/kits/python-kit/3.7-release
 python-modules-kit:funtoo/kits/python-kit/3.7-release
 qt-kit:funtoo/kits/python-kit/3.7-release
 ruby-kit:funtoo/kits/python-kit/3.7-release
+rust-kit:funtoo/kits/python-kit/3.7-release
 science-kit:funtoo/kits/python-kit/3.7-release
 security-kit:funtoo/kits/python-kit/3.7-release
 text-kit:funtoo/kits/python-kit/3.7-release

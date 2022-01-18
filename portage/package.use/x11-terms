@@ -31,3 +31,14 @@ dev-lang/spidermonkey clang
 # required by media-sound/pavucontrol-4.0::media-kit
 # required by media-sound/pavucontrol (argument)
 >=media-plugins/alsa-plugins-1.2.2 pulseaudio
+# required by sys-kernel/genkernel-4.0.2-r4::core-kit[cryptsetup]
+# required by sys-kernel/debian-sources-5.15.5_p2::core-kit[binary]
+# required by @selected
+# required by @world (argument)
+>=sys-fs/cryptsetup-2.1.0 static
+# required by sys-fs/cryptsetup-2.1.0::core-kit[-static-libs,static]
+# required by sys-kernel/genkernel-4.0.2-r4::core-kit[cryptsetup]
+# required by sys-kernel/debian-sources-5.15.5_p2::core-kit[binary]
+# required by @selected
+# required by @world (argument)
+>=sys-fs/lvm2-2.02.173 static-libs

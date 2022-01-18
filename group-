@@ -106,3 +106,5 @@ ultimaker:x:369:
 distcc:x:240:
 beanstalk:x:137:
 flatpak:x:313:
+dialout:x:20:
+netdev:x:956:

@@ -1,1 +1,1 @@
-dev-vcs/git curl doc highlight -iconv perl
+dev-vcs/git curl -doc highlight -iconv perl

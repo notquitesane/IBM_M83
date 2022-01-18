@@ -3,7 +3,7 @@
 
 UUID=6DF8-9C2C					/boot			vfat		noauto,noatime						1 2
 UUID=94df512c-4ec4-4de2-bfc8-221b599154d2	/			f2fs		noatime							0 1
-UUID=6414a183-dceb-4fd7-88fc-1b7d357fb426	none			swap		sw							0 0
+UUID=3130a88a-5103-4823-b8dd-859b73dce9f9	none			swap		sw							0 0
 
 UUID=da89835d-c6a9-456c-9b82-b29b85cbd131	/usr			f2fs		defaults,noatime					0 0
 UUID=27d35a77-4a78-4578-9797-3d5d276d5ee6	/var			reiserfs	defaults,noatime					0 0
