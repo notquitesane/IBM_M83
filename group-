@@ -14,12 +14,12 @@ news:x:13:news
 uucp:x:14:uucp
 console:x:17:
 audio:x:18:nqs
-cdrom:x:19:nqs,aegisfang,pheonixrisen,trancenightfyr,qzenet,maruka,users
+cdrom:x:19:nqs,trancenightfyr,maruka,users
 tape:x:26:root
 video:x:27:root,nqs
-cdrw:x:80:nqs,aegisfang,pheonixrisen,trancenightfyr,qzenet,maruka,users
+cdrw:x:80:nqs,trancenightfyr,maruka,users
 usb:x:85:
-users:x:100:nqs,aegisfang,pheonixrisen,trancenightfyr,qzenet,maruka,brittnay_kuder,leprechaun
+users:x:100:nqs,trancenightfyr,maruka,brittnay_kuder
 portage:x:250:portage,nqs
 utmp:x:406:
 nogroup:x:65533:
@@ -43,8 +43,8 @@ polkitd:x:998:
 android:x:997:nqs
 kvm:x:78:nqs,qemu
 ldap:x:439:
-games:x:35:nqs,aegisfang,pheonixrisen,trancenightfyr,qzenet,maruka,users
-magick:x:996:nqs,aegisfang,pheonixrisen,trancenightfyr,qzenet,maruka,users
+games:x:35:nqs,trancenightfyr,maruka,users
+magick:x:996:nqs,trancenightfyr,maruka,users
 hsqldb:x:995:
 kdm:x:994:
 postgres:x:70:
@@ -108,3 +108,4 @@ beanstalk:x:137:
 flatpak:x:313:
 dialout:x:20:
 netdev:x:956:
+avahi:x:955:
