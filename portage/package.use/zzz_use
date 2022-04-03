@@ -1,0 +1,4 @@
+# required by sys-process/below-0.3.0::flow
+# required by below (argument)
+>=dev-lang/rust-bin-1.59.0 rustfmt
+net-p2p/transmission -qt5 gtk

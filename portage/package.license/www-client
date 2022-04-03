@@ -1,13 +1,1 @@
->=www-client/google-chrome-87.0.4280.88 google-chrome
->=www-client/opera-73.0.3856.284-r1 OPERA-2018
-# required by net-im/discord-bin (argument)
->=net-im/discord-bin-0.0.16-r1 all-rights-reserved
-# required by =sys-boot/etcher-1.5.115::ROKO__ (argument)
->=sys-boot/etcher-1.5.115 GPL2
-# required by media-libs/fdk-aac (argument)
->=media-libs/fdk-aac-2.0.0 FraunhoferFDK
-# required by app-emulation/virtualbox (argument)
->=app-emulation/virtualbox-6.1.30.148432 PUEL
-# required by app-emulation/virtualbox-6.1.30.148432::core-kit
-# required by app-emulation/virtualbox (argument)
->=app-emulation/virtualbox-bin-6.1.30.148432 PUEL
+>=www-client/opera-84.0.4316.14 OPERA-2014

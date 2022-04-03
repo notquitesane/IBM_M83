@@ -1,3 +1,5 @@
-dev-qt/qtgui udev X jpeg evdev
+dev-qt/qtcore icu
+dev-qt/qtgui evdev jpeg udev
+dev-qt/qtmultimedia widgets
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets

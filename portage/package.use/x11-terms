@@ -1,44 +1,8 @@
-x11-terms/mlterm cairo fbcon libssh2 xft gtk
+media-libs/mesa cpu_flags_x86_avx cpu_flags_x86_avx2
+media-sound/alsa-utils doc
+net-fs/nfs-utils nfsv41
+sys-apps/openrc -bash-completion
+x11-terms/mlterm cairo fbcon gtk libssh2 xft
 x11-terms/mrxvt jpeg menubar png truetype xpm
 x11-terms/rxvt-unicode 256-color iso14755 perl startup-notification unicode3 xft
 x11-terms/xterm truetype
-dev-qt/qtcore icu
-dev-libs/libaio static-libs
-net-misc/sb-hosts gambling
-sys-kernel/mkinitramfs-ll reiserfs f2fs zsh dm-crypt device-mapper
-kde-apps/ktouch X
-media-libs/qhull static-libs
-media-gfx/prusaslicer gui
-app-emulation/virtualbox -pulseaudio
-app-admin/sagan smtp
-dev-lang/spidermonkey clang
-# required by sys-auth/pambase-20190426::core-kit[mktemp]
-# required by sys-apps/shadow-4.7-r1::core-kit[pam]
-# required by @system
-# required by @world (argument)
->=sys-libs/pam-1.3.1.20190226 mktemp
-# required by dev-python/oauth2client-4.1.3::python-modules-kit
-# required by dev-python/google-api-python-client-1.6.5::python-modules-kit
-# required by app-misc/gcalcli-4.0.0_alpha3-r1::nokit
-# required by app-misc/gcalcli (argument)
-=dev-python/keyring-13.2.1 -python_targets_python2_7
-# required by dev-python/oauth2client-4.1.3::python-modules-kit[python_targets_python3_7,python_targets_python2_7]
-# required by dev-python/google-api-python-client-1.6.5::python-modules-kit
-# required by app-misc/gcalcli-4.0.0_alpha3-r1::nokit
-# required by app-misc/gcalcli (argument)
-=dev-python/keyring-13.2.1 python_targets_python2_7
-# required by media-sound/pulseaudio-14.0::gnome-kit[alsa,alsa-plugin]
-# required by media-sound/pavucontrol-4.0::media-kit
-# required by media-sound/pavucontrol (argument)
->=media-plugins/alsa-plugins-1.2.2 pulseaudio
-# required by sys-kernel/genkernel-4.0.2-r4::core-kit[cryptsetup]
-# required by sys-kernel/debian-sources-5.15.5_p2::core-kit[binary]
-# required by @selected
-# required by @world (argument)
->=sys-fs/cryptsetup-2.1.0 static
-# required by sys-fs/cryptsetup-2.1.0::core-kit[-static-libs,static]
-# required by sys-kernel/genkernel-4.0.2-r4::core-kit[cryptsetup]
-# required by sys-kernel/debian-sources-5.15.5_p2::core-kit[binary]
-# required by @selected
-# required by @world (argument)
->=sys-fs/lvm2-2.02.173 static-libs

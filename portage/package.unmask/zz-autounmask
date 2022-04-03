@@ -1,0 +1,49 @@
+#
+# required by =sci-mathematics/cgal-5.0.2::booboo (argument)
+# /etc/portage/package.mask/all_categories:
+>=sci-mathematics/cgal-5.0.2
+# required by sci-electronics/freeroute (argument)
+# /etc/portage/package.mask/all_categories:
+>=sci-electronics/freeroute-1.2.43_p20150316
+# required by app-portage/emake (argument)
+# /etc/portage/package.mask/all_categories:
+>=app-portage/emake-0.3.4
+# required by media-video/tartube (argument)
+# /etc/portage/package.mask/all_categories:
+=media-video/tartube-2.3.0
+# required by net-firewall/hblock (argument)
+# /etc/portage/package.mask/all_categories:
+=net-firewall/hblock-3.2.0
+# required by sys-apps/firetools (argument)
+# /etc/portage/package.mask/all_categories:
+=sys-apps/firetools-0.9.64
+# required by app-portage/showbuild (argument)
+# /etc/portage/package.mask/all_categories:
+>=app-portage/showbuild-0.9.1-r1
+# required by app-misc/jdupes (argument)
+# /etc/portage/package.mask/all_categories:
+=app-misc/jdupes-1.20.0
+# required by app-portage/showem (argument)
+# /etc/portage/package.mask/all_categories:
+=app-portage/showem-1.0.3
+# required by sys-kernel/zen-sources::src_prepare-overlay (argument)
+# /etc/portage/package.mask/all_categories:
+>=sys-kernel/zen-sources-5.16.5:5.16.5
+# required by dev-util/android-udev-rules (argument)
+# /etc/portage/package.mask/all_categories:
+>=dev-util/android-udev-rules-20210501
+# required by media-sound/ponymix::src_prepare-overlay (argument)
+# /etc/portage/package.mask/all_categories:
+>=media-sound/ponymix-5
+# required by app-portage/portconf::spikyatlinux (argument)
+# /etc/portage/package.mask/all_categories:
+>=app-portage/portconf-1.6.9
+# required by sys-apps/earlyoom::ace (argument)
+# /etc/portage/package.mask/all_categories:
+=sys-apps/earlyoom-1.6.1
+# required by app-shells/gentoo-zsh-completions::xdch47 (argument)
+# /etc/portage/package.mask/all_categories:
+=app-shells/gentoo-zsh-completions-20200910
+# required by net-misc/ddgr::src_prepare-overlay (argument)
+# /etc/portage/package.mask/all_categories:
+=net-misc/ddgr-1.9

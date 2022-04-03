@@ -1,4 +1,0 @@
-=x11-plugins/multiload-ng-1.4.2
-# required by =sys-boot/etcher-1.5.115::ROKO__ (argument)
-# /etc/portage/package.mask/all_categories:
-=sys-boot/etcher-1.5.115

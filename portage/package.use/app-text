@@ -1,8 +1,6 @@
-app-text/asciidoc graphviz highlight
 app-text/calibre -udisks
 app-text/ghostscript-gpl cups
-app-text/mupdf X
 app-text/pandoc hscolour
-app-text/poppler cairo curl jpeg -jpeg2k png tiff utils qt5
+app-text/poppler cairo curl jpeg -jpeg2k png qt5 tiff utils
 app-text/xmlto text
 app-text/xournal pdf

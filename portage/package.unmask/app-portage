@@ -1,6 +1,0 @@
->=app-portage/gentmaint-0.3.2
->=app-portage/logclean-18.4.1
->=app-portage/portage-bashrc-mv-20.3
-=app-portage/portconf-1.6.8-r1
->=app-portage/portconf-9999
->=app-portage/world-mv-3.20

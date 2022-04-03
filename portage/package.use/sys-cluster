@@ -1,1 +1,1 @@
-sys-cluster/openmpi heterogeneous mpi-threads romio cxx
+sys-cluster/openmpi cxx heterogeneous mpi-threads romio

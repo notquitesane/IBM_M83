@@ -3,12 +3,15 @@ sys-apps/coreutils gmp
 sys-apps/dbus X
 sys-apps/elfix ptpax
 sys-apps/etckeeper cron
+sys-apps/firejail x11
+sys-apps/hwloc cairo -cuda plugins
 sys-apps/iproute2 -atm berkdb elf
 sys-apps/kmod tools
-sys-apps/lm-sensors sensord
-sys-apps/man-db berkdb gdbm
+sys-apps/lm_sensors contrib sensord
+sys-apps/lshw gtk
+sys-apps/man-db berkdb gdbm -nls
 sys-apps/pciutils dns
 sys-apps/portage doc
 sys-apps/shadow skey
-sys-apps/util-linux slang tty-helpers -udev static-libs
+sys-apps/util-linux slang static-libs tty-helpers -udev
 sys-apps/watchdog nfs

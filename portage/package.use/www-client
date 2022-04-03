@@ -1,4 +1,3 @@
-www-client/elinks bittorrent ftp debug -javascript perl ruby
-www-client/palemoon-bin gtk3 startup-notification
+www-client/elinks -bittorrent debug ftp -javascript perl ruby
 www-client/serpent startup-notification
 www-client/w3m X imlib

@@ -1,2 +1,2 @@
-net-print/cups -acl -dbus -usb
-net-print/cups-filters -dbus foomatic pdf
+net-print/cups -acl -usb
+net-print/cups-filters foomatic

@@ -1,2 +1,3 @@
 sci-libs/fftw quad
-sci-libs/hdf5 -mpi -hl unsupported
+sci-libs/hdf5 -hl -mpi
+sci-libs/nlopt -python -python_targets_python2_7

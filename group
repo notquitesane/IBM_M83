@@ -109,3 +109,4 @@ flatpak:x:313:
 dialout:x:20:
 netdev:x:956:
 avahi:x:955:
+adbusers:x:954:

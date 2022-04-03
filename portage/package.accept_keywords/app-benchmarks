@@ -1,2 +1,1 @@
->=app-benchmarks/bootchart2-0.14.8-r1 ~amd64
->=app-benchmarks/ioping-1.2 ~amd64
+app-benchmarks/ioping ~amd64
