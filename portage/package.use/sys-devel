@@ -1,5 +1,5 @@
 sys-devel/binutils -gold static-libs
 sys-devel/clang llvm_targets_AArch64 -llvm_targets_AMDGPU llvm_targets_AVR -llvm_targets_NVPTX
-sys-devel/distcc gtk
+sys-devel/distcc -gtk
 sys-devel/gcc doc fortran go graphite objc objc++ objc-gc vtv
 sys-devel/llvm libffi llvm_targets_AArch64 -llvm_targets_AMDGPU llvm_targets_AVR -llvm_targets_NVPTX

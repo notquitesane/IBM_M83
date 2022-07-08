@@ -1,2 +1,2 @@
-mail-client/mutt berkdb doc gdbm gpg gpgme -notmuch pgp_classic pop smime smime_classic -tokyocabinet
-mail-client/neomutt gpgme notmuch sasl slang
+mail-client/mutt berkdb -doc gdbm gpg gpgme -notmuch pgp_classic pop smime smime_classic -tokyocabinet
+mail-client/neomutt gpgme -notmuch sasl slang

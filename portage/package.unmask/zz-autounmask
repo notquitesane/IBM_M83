@@ -28,7 +28,6 @@
 =app-portage/showem-1.0.3
 # required by sys-kernel/zen-sources::src_prepare-overlay (argument)
 # /etc/portage/package.mask/all_categories:
->=sys-kernel/zen-sources-5.16.5:5.16.5
 # required by dev-util/android-udev-rules (argument)
 # /etc/portage/package.mask/all_categories:
 >=dev-util/android-udev-rules-20210501
@@ -47,3 +46,5 @@
 # required by net-misc/ddgr::src_prepare-overlay (argument)
 # /etc/portage/package.mask/all_categories:
 =net-misc/ddgr-1.9
+# required by =media-gfx/cura-4.12.0 (argument)
+# /etc/portage/package.mask/all_categories:
