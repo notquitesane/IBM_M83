@@ -1,4 +1,0 @@
-app-portage/eix doc nls sqlite
-app-portage/gentoopm python_targets_python2_7
-app-portage/layman gpg mercurial sqlite squashfs sync-plugin-portage -python_targets_python2_7
-app-portage/portpeek -python_targets_python2_7

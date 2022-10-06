@@ -1,3 +1,0 @@
-sys-process/htop hwloc -lm-sensors
-sys-process/lsof rpc
-sys-process/procps modern-top

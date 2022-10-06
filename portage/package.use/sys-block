@@ -1,3 +1,0 @@
-sys-block/f3 extra
-sys-block/gparted -btrfs cryptsetup f2fs fat -hfs -jfs -ntfs policykit reiser4 reiserfs xfs
-sys-block/parted device-mapper

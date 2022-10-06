@@ -1,4 +1,0 @@
-sys-kernel/genkernel-next cryptsetup
-sys-kernel/gentoo-sources experimental -symlink
-sys-kernel/linux-firmware initramfs savedconfig
-sys-kernel/zen-sources symlink

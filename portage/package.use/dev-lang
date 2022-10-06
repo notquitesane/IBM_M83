@@ -1,7 +1,0 @@
-dev-lang/fpc source
-dev-lang/luajit lua52compat
-dev-lang/perl berkdb gdbm
-dev-lang/php -apache2 curl gd imap
-dev-lang/python sqlite
-dev-lang/python-exec python_targets_python2_7
-dev-lang/spidermonkey clang

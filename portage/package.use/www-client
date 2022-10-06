@@ -1,3 +1,0 @@
-www-client/elinks -bittorrent debug ftp -javascript perl ruby
-www-client/serpent startup-notification
-www-client/w3m X imlib

@@ -1,4 +1,0 @@
-media-sound/alsa-tools gtk
-media-sound/moc aac alsa curl ffmpeg vorbis
-media-sound/mpd alsa curl ffmpeg flac icu lame libmpdclient openal twolame vorbis
-media-sound/pulseaudio X alsa -bluetooth dbus -equalizer gdbm -native-headset orc qt5 realtime sox tcpd

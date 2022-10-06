@@ -1,3 +1,0 @@
-virtual/ffmpeg X mp3 theora -vaapi -vdpau x264
-virtual/imagemagick-tools jpeg png svg tiff
-virtual/libudev static-libs

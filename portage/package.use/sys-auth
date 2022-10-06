@@ -1,3 +1,0 @@
-sys-auth/pam_mktemp -prevent-removal
-sys-auth/pambase mktemp
-sys-auth/polkit elogind -gtk

@@ -1,2 +1,0 @@
-net-mail/isync sasl
-net-mail/notmuch mutt -python_targets_python2_7

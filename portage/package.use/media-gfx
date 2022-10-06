@@ -1,8 +1,0 @@
-media-gfx/digikam X
-media-gfx/gimp -udev vector-icons xpm
-media-gfx/graphviz X cairo pdf svg
-#media-gfx/imagemagick X bzip2 corefonts cxx djvu fftw fontconfig fpx graphviz hdri heif jbig jpeg jpeg2k lcms lqr lzma -opencl openexr openmp pango perl png postscript q32 q8 raw static-libs svg test tiff truetype webp wmf xml zip zlib
-
-media-gfx/inkscape imagemagick jpeg
-media-gfx/qiv lcms
-media-gfx/xv jpeg png tiff

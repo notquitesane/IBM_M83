@@ -1,8 +1,0 @@
-media-libs/mesa cpu_flags_x86_avx cpu_flags_x86_avx2
-media-sound/alsa-utils doc
-net-fs/nfs-utils nfsv41
-sys-apps/openrc -bash-completion
-x11-terms/mlterm cairo fbcon gtk libssh2 xft
-x11-terms/mrxvt jpeg menubar png truetype xpm
-x11-terms/rxvt-unicode 256-color iso14755 perl startup-notification unicode3 xft
-x11-terms/xterm truetype
