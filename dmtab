@@ -10,3 +10,9 @@
 #
 # and verify that they are correct.
 
+root: 0 497985536 crypt aes-xts-plain64 :64:logon:cryptsetup:c16496e2-dec7-4e3a-b1f1-2354e3bcf2a9-d0 0 8:2 32768
+vg-opt: 0 67108864 linear 254:0 301991936
+vg-root: 0 67108864 linear 254:0 369100800
+vg-swap: 0 33554432 linear 254:0 2048
+vg-usr: 0 268435456 linear 254:0 33556480
+vg-var: 0 33554432 linear 254:0 436209664

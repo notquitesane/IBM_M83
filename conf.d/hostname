@@ -1,2 +1,2 @@
 # Hostname fallback if /etc/hostname does not exist
-hostname="HAL"
+hostname="hal.asisee.it"

@@ -1,5 +1,0 @@
-template="interface"
-ipaddr="10.255.0.11/28"
-gateway="10.255.0.9"
-nameservers="10.255.0.9 1.1.1.1"
-domain="asisee.it"

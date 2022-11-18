@@ -1,0 +1,19 @@
+dev-libs/libbsd static-libs
+app-emulation/virtualbox -chm
+app-emulation/virtualbox-modules -pax_kernel
+dev-libs/glib -dbus
+gnome-base/librsvg -introspection
+# required by dev-libs/gdl-3.22.0::gnome-kit
+# required by media-gfx/inkscape-1.1.2-r1::media-kit
+# required by @selected
+# required by @world (argument)
+>=x11-libs/gtk+-3.24.23-r2 introspection
+# required by x11-libs/gtk+-3.24.23-r2::gnome-kit
+# required by x11-misc/notification-daemon-3.20.0::gnome-kit
+# required by virtual/notification-daemon-0::gnome-kit[-kde,-gnome]
+# required by x11-libs/libnotify-0.7.9::gnome-kit
+# required by app-i18n/ibus-1.5.20.20190629::gnome-kit
+# required by net-im/zoom-bin-5.12.6.173::net-kit
+# required by @selected
+# required by @world (argument)
+>=x11-libs/pango-1.44.7-r2 introspection
