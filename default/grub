@@ -71,3 +71,5 @@ GRUB_DISTRIBUTOR="Gentoo"
 # This is useful, for example, to allow users who can't see the screen
 # to know when they can make a choice on the menu.
 #GRUB_INIT_TUNE="60 800 1"
+GRUB_CMDLINE_LINUX="keymap=dvorak crypt_root=UUID=c16496e2-dec7-4e3a-b1f1-2354e3bcf2a9 dolvm real_root=/dev/mapper/vg-root ro rootfstype=ext4 resume=swap:/dev/mapper/vg-swap"
+GRUB_CRYPTODISK_ENABLE=y

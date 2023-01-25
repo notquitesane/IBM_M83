@@ -1,4 +1,3 @@
-sys-kernel/genkernel-next cryptsetup
 sys-kernel/gentoo-sources experimental symlink build
 sys-kernel/linux-firmware initramfs
 sys-kernel/zen-sources symlink

@@ -20,3 +20,12 @@
 # required by =sys-apps/watchdog-5.14::argent-main (argument)
 # /etc/portage/package.mask/all_categories:
 =sys-apps/watchdog-5.14
+# required by =www-client/palemoon-bin-31.4.1::palemoon (argument)
+# /etc/portage/package.mask/all_categories:
+=www-client/palemoon-bin-31.4.1
+# required by app-portage/gentoo-sweep (argument)
+# /etc/portage/package.mask/all_categories:
+=app-portage/gentoo-sweep-0.1.2a
+# required by =www-client/palemoon-bin-31.4.2 (argument)
+# /etc/portage/package.mask/all_categories:
+=www-client/palemoon-bin-31.4.2

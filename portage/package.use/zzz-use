@@ -1,19 +1,35 @@
-dev-libs/libbsd static-libs
-app-emulation/virtualbox -chm
+*/* device-mapper lvm luks
+sys-kernel/linux-firmware initramfs
+sys-kernel/debian-sources -logo -luks -lvm
+sys-fs/cryptsetup -static
+sys-kernel/genkernel cryptsetup
 app-emulation/virtualbox-modules -pax_kernel
-dev-libs/glib -dbus
-gnome-base/librsvg -introspection
-# required by dev-libs/gdl-3.22.0::gnome-kit
-# required by media-gfx/inkscape-1.1.2-r1::media-kit
+# required by media-video/vlc-3.0.18::media-kit[ffmpeg]
+# required by vlc (argument)
+>=media-video/ffmpeg-4.3.1-r2 vdpau vaapi
+# required by sys-kernel/genkernel-4.0.3-r3::core-kit[cryptsetup]
 # required by @selected
 # required by @world (argument)
->=x11-libs/gtk+-3.24.23-r2 introspection
-# required by x11-libs/gtk+-3.24.23-r2::gnome-kit
-# required by x11-misc/notification-daemon-3.20.0::gnome-kit
-# required by virtual/notification-daemon-0::gnome-kit[-kde,-gnome]
-# required by x11-libs/libnotify-0.7.9::gnome-kit
-# required by app-i18n/ibus-1.5.20.20190629::gnome-kit
-# required by net-im/zoom-bin-5.12.6.173::net-kit
+>=sys-fs/cryptsetup-2.6.0 static
+# required by sys-fs/cryptsetup-2.6.0::core-kit[-static-libs,static]
+# required by sys-kernel/genkernel-4.0.3-r3::core-kit[cryptsetup]
 # required by @selected
 # required by @world (argument)
->=x11-libs/pango-1.44.7-r2 introspection
+>=dev-libs/popt-1.16-r2 static-libs
+# required by sys-fs/cryptsetup-2.6.0::core-kit[-static-libs,static,argon2]
+# required by sys-kernel/genkernel-4.0.3-r3::core-kit[cryptsetup]
+# required by @selected
+# required by @world (argument)
+>=app-crypt/argon2-20171227-r1 static-libs
+# required by sys-fs/cryptsetup-2.6.0::core-kit[-static-libs,openssl,static]
+# required by sys-kernel/genkernel-4.0.3-r3::core-kit[cryptsetup]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.1.1q static-libs
+# required by sys-fs/cryptsetup-2.6.0::core-kit[-static-libs,static]
+# required by sys-kernel/genkernel-4.0.3-r3::core-kit[cryptsetup]
+# required by @selected
+# required by @world (argument)
+>=sys-fs/lvm2-2.02.173 static-libs
+app-crypt/libmd static-libs
+dev-libs/libbsd static-libs

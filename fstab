@@ -1,12 +1,9 @@
 # <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
 
-UUID=1B55-D2CA					/boot			vfat		noauto,noatime						1 2
-UUID=b32ff43b-d5b1-4c45-8c7f-5d8a2965c308	/			ext4		noatime							0 1
-UUID=d3f9ecd0-f7c9-430c-899e-357f614aab8a	none			swap		sw							0 0
+UUID=F5F4-5060					/boot			vfat		noauto,noatime						1 2
+UUID=eaab44f2-4a56-4d1d-b244-bc6d5bee0ade	/			f2fs		noatime							0 1
+UUID=c73f67ba-e5d7-43ca-ac7e-0a4acf311842	none			swap		sw							0 0
 
-UUID=edfff719-f1eb-46fa-8fda-293b22a1d393	/usr			f2fs		defaults,noatime					0 0
-UUID=93f77520-149f-489a-87d9-725f434633a8	/var			f2fs		defaults,noatime					0 0
-UUID=ea544a30-b840-4c4d-bc3c-5d44c7ae1912	/opt			f2fs		defaults,noatime					0 0
 /dev/shm 					/tmp			tmpfs		rw,nosuid,nodev,noatime,size=774144k			0 0
 /dev/shm   				        /var/tmp	        tmpfs           size=10G,rw,nosuid,nodev,noatime			0 0
 shm						/dev/shm        	tmpfs           rw,nosuid,nodev,noexec,relatime 			0 0 
